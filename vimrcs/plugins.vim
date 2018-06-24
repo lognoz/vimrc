@@ -20,6 +20,9 @@ call vundle#begin()
 	Plugin 'tpope/vim-fugitive'            " Make git usable with vim
 	Plugin 'gregsexton/gitv'               " Gitk for vim
 
+	" Text helpers
+	Plugin 'tpope/vim-speeddating'         " Provide date, roman number increment and decrement
+
 	" Dev tools
 	Plugin 'mattn/emmet-vim'               " Provide support for HTML tags
 	Plugin 'tpope/vim-surround'            " Provide mapping (parentheses, brackets, quotes, etc.)
