@@ -1,0 +1,20 @@
+snippet function
+	function! ${1:function_name}($2)
+		${3:" Code...}
+	endfunction
+endsnippet
+
+snippet header
+	" ${1:Project description}
+	" Maintainer:   Marc-Antoine Loignon <info@logoz.com>
+	" Last Change:  `system("date +%Y-%m-%d")`
+	" Version:      1.0.0
+
+	${0}
+endsnippet
+
+snippet if
+	if ${1}
+		${0:" Code...}
+	endif
+endsnippet
