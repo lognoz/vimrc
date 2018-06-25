@@ -77,10 +77,10 @@ inoremap <left>   <nop>
 inoremap <right>  <nop>
 
 " Rewrite command
-command WQ wq
-command Wq wq
-command W w
-command Q q
+command! WQ wq
+command! Wq wq
+command! W w
+command! Q q
 
 " }}}
 " Indentation {{{
