@@ -82,6 +82,9 @@ command! Wq wq
 command! W w
 command! Q q
 
+" Reloading vimrc
+nnoremap <leader>r :source ~/.vim/vimrc
+
 " }}}
 " Indentation {{{
 
