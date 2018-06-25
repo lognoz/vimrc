@@ -83,7 +83,7 @@ command! W w
 command! Q q
 
 " Reloading vimrc
-nnoremap <leader>r :source ~/.vim/vimrc
+nnoremap <leader>r :source ~/.vim/vimrc<cr>
 
 " }}}
 " Indentation {{{
