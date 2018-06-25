@@ -12,7 +12,7 @@ set mouse=a          " enable mouse
 set noruler          " turn off ruler
 set showcmd          " show commands
 set showmode         " show current mode
-set wildchar=<tab>	" start wild expansion using <tab>
+set wildchar=<tab>   " start wild expansion using <tab>
 set wildmenu         " define wildmenu
 set cursorline       " highlight cursor line
 
