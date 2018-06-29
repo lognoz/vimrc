@@ -130,6 +130,8 @@ set showmatch
 autocmd InsertEnter * :let @/=""
 autocmd InsertLeave * :let @/=""
 
+nnoremap <esc><esc> :nohlsearch<cr>
+
 " }}}
 " Lines movements {{{
 
