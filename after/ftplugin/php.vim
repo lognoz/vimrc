@@ -10,4 +10,4 @@ setlocal formatoptions+=qroc
 setlocal comments=s1:/*,mb:*,ex:*/,://,:#
 
 " Comments width
-set textwidth=45
+setlocal textwidth=45

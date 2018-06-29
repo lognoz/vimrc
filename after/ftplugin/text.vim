@@ -1,7 +1,7 @@
 " Document width
-set textwidth=74
+setlocal textwidth=74
 
 " Replace tabs by spaces
-set tabstop=2
-set shiftwidth=2
-set expandtab
+setlocal tabstop=2
+setlocal shiftwidth=2
+setlocal expandtab
