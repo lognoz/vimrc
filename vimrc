@@ -4,9 +4,10 @@
 " Version:      1.0.0
 
 syntax on
-
 filetype on
-filetype indent off
+
+filetype plugin on
+filetype indent on
 
 source ~/.vim/vimrcs/default.vim
 source ~/.vim/vimrcs/plugins.vim
