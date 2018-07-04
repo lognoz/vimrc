@@ -48,8 +48,8 @@ set cm=blowfish2
 map <space> <leader>
 
 " Copy and paste in clipboard
-noremap P "+p
-noremap Y "+y
+noremap <leader>p "+p
+noremap <leader>y "+y
 
 " Shortcut to write
 nnoremap <leader>w :w<cr>
