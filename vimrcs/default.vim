@@ -65,17 +65,6 @@ noremap - <c-x>
 noremap <tab> <c-o>
 noremap <s-tab> <c-i>
 
-" Disabled arrows keys
-noremap <up>      <nop>
-noremap <down>    <nop>
-noremap <left>    <nop>
-noremap <right>   <nop>
-
-inoremap <up>     <nop>
-inoremap <down>   <nop>
-inoremap <left>   <nop>
-inoremap <right>  <nop>
-
 " Rewrite command
 command! WQ wq
 command! Wq wq
