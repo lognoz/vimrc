@@ -82,6 +82,7 @@ nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>go :Git checkout<space>
 nnoremap <leader>gc :Gmessage<space>
 nnoremap <leader>gb :Git branch<cr>
+nnoremap <leader>gl :Git log<cr>
 nnoremap <leader>gpl :GitPullHead<cr>
 nnoremap <leader>gps :GitPushHead<cr>
 
