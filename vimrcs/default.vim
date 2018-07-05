@@ -9,6 +9,7 @@
 set autoread         " auto read when file is changed from outside
 set cursorline       " highlight cursor line
 set hid              " hiding buffers even though they contain modifications
+set history=50       " keep 50 lines of command line history
 set mouse=a          " enable mouse
 set nocompatible     " use Vim defaults instead of 100% vi compatibility
 set noruler          " turn off ruler
