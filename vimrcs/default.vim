@@ -7,14 +7,15 @@
 " Editing behaviour {{{
 
 set autoread         " auto read when file is changed from outside
+set cursorline       " highlight cursor line
 set hid              " hiding buffers even though they contain modifications
 set mouse=a          " enable mouse
+set nocompatible     " use Vim defaults instead of 100% vi compatibility
 set noruler          " turn off ruler
 set showcmd          " show commands
 set showmode         " show current mode
 set wildchar=<tab>   " start wild expansion using <tab>
 set wildmenu         " define wildmenu
-set cursorline       " highlight cursor line
 
 " Active fold method
 set foldmethod=syntax
