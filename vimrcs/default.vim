@@ -4,7 +4,7 @@
 " Version:      1.0.0
 
 " Section: Preferences
-" Editing behaviour {{{
+" Editing behaviour {{{1
 
 set autoread         " auto read when file is changed from outside
 set cursorline       " highlight cursor line
@@ -90,8 +90,7 @@ command! Q q
 " Reloading vimrc
 nnoremap <leader>r :source ~/.vim/vimrc<cr>
 
-" }}}
-" Indentation {{{
+" Indentation {{{1
 
 set autoindent
 set copyindent
@@ -110,8 +109,7 @@ nnoremap = ==
 nnoremap < <<
 nnoremap > >>
 
-" }}}
-" Backup, undo, swap {{{
+" Backup, undo, swap {{{1
 
 set noswapfile
 
@@ -122,8 +120,7 @@ set undofile
 set undodir=~/.vim/tmp/undo
 set undolevels=1000
 
-" }}}
-" Search {{{
+" Search {{{1
 
 set ignorecase
 set smartcase
@@ -137,16 +134,14 @@ autocmd InsertLeave * :let @/=""
 
 nnoremap <esc><esc> :nohlsearch<cr>
 
-" }}}
-" Lines movements {{{
+" Lines movements {{{1
 
 noremap <c-j> :m .+1<cr>==
 noremap <c-k> :m .-2<cr>==
 vnoremap <c-j> :m '>+1<cr>gv=gv
 vnoremap <c-k> :m '<-2<cr>gv=gv
 
-" }}}
-" Tabs movements {{{
+" Tabs movements {{{1
 
 map <leader>1 1gt
 map <leader>2 2gt
@@ -157,8 +152,7 @@ map <leader>6 6gt
 map <leader>7 7gt
 map <leader>8 8gt
 
-" }}}
-" Autocomplete {{{
+" Autocomplete {{{1
 
 set completeopt=longest,menuone
 autocmd FileType css,scss set omnifunc=csscomplete#CompleteCSS
@@ -166,7 +160,7 @@ autocmd FileType css,scss set omnifunc=csscomplete#CompleteCSS
 " }}}
 
 " Section: Fonctionalities
-" Html tags {{{
+" Html tags {{{1
 
 function! AutoIndentHtmlTags()
 	let line = getline('.')
@@ -181,16 +175,14 @@ endfunction
 
 inoremap <cr> <c-r>=AutoIndentHtmlTags()<cr>
 
-" }}}
-" Autofocus in file {{{
+" Autofocus in file {{{1
 
 augroup SaveCursor
 	autocmd!
 	autocmd BufReadPost * call setpos(".", getpos("'\""))
 augroup END
 
-" }}}
-" Update last change date {{{
+" Update last change date {{{1
 
 function! SetEvents(type)
 	let line = search("\" Last Change:")
@@ -198,5 +190,3 @@ function! SetEvents(type)
 endfunction
 
 autocmd FileType vim :call SetEvents('vim')
-
-" }}}
