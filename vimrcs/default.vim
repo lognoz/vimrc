@@ -46,6 +46,9 @@ set listchars=tab:\»\ ,trail:·,eol:¬,extends:→,precedes:←
 " Encryption
 set cm=blowfish2
 
+" Suffixes that get lower priority when doing tab completion for filenames.
+set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png,.jpg
+
 " Change map leader
 map <space> <leader>
 
