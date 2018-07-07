@@ -50,11 +50,6 @@ call vundle#begin()
 	Plugin 'joshdick/onedark.vim'         " Principal theme
 call vundle#end()
 
-" Nerdtree plugin {{{1
-
-noremap <c-t> :NERDTreeToggle<cr>
-let g:NERDTreeMouseMode = 3
-
 " Tagbar configuration {{{1
 
 noremap <c-e> :TagbarToggle<cr>
