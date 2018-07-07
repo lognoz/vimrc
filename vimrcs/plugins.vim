@@ -65,10 +65,36 @@ let g:tagbar_type_php  = {
 	\ ]
 \ }
 
-" }}}
-" Gundo mapping {{{
+" Gundo mapping {{{1
 
 noremap <c-g> :GundoToggle<cr>
+
+" Netrw configuration {{{1
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 15
+let g:netrw_open = 0
+
+function! ToggleExplorer()
+	if g:netrw_open
+		let i = bufnr("$")
+		while (i >= 1)
+			if (getbufvar(i, "&filetype") == "netrw")
+				silent exe "bwipeout " . i
+			endif
+			let i-=1
+		endwhile
+		let g:netrw_open = 0
+	else
+		let g:netrw_open = 1
+		silent Vexplore
+	endif
+endfunction
+
+noremap <C-t> :call ToggleExplorer()<cr>
 
 " }}}
 
