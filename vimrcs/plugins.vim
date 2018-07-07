@@ -21,10 +21,6 @@ call vundle#begin()
 	" Dependencies
 	Plugin 'VundleVim/Vundle.vim'          " Plugin manager
 
-	" Files managers
-	Plugin 'kien/ctrlp.vim'                " Search in all files
-	Plugin 'scrooloose/nerdtree'           " Files managers
-
 	" Git helpers
 	Plugin 'airblade/vim-gitgutter'        " Show git diff
 	Plugin 'tpope/vim-fugitive'            " Make git usable with vim
