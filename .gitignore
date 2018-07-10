@@ -2,6 +2,3 @@
 bundle/
 tmp/backup/
 tmp/undo/
-
-!tmp/backup/.gitkeep
-!tmp/undo/.gitkeep
