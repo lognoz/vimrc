@@ -63,28 +63,28 @@ set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.i
 map <space> <leader>
 
 " Copy and paste in clipboard
-noremap <leader>p "+p
-noremap <leader>y "+y
+nnoremap <leader>p "+p
+nnoremap <leader>y "+y
 
 " Shortcut to write
 nnoremap <leader>w :w<cr>
 
 " Use black hole register to delete the empty line
-noremap <expr> dd (getline('.') =~ '^\s*$' && v:register == '"' ? '"_' : '').'dd'
+nnoremap <expr> dd (getline('.') =~ '^\s*$' && v:register == '"' ? '"_' : '').'dd'
 
 " Increment numbers
-noremap + <c-a>
-noremap - <c-x>
+nnoremap + <c-a>
+nnoremap - <c-x>
 
 " Tab and shift-tab to traverse jump list
 noremap <tab> <c-o>
 noremap <s-tab> <c-i>
 
 " Disabled arrows keys
-noremap <up>      <nop>
-noremap <down>    <nop>
-noremap <left>    <nop>
-noremap <right>   <nop>
+nnoremap <up>      <nop>
+nnoremap <down>    <nop>
+nnoremap <left>    <nop>
+nnoremap <right>   <nop>
 
 inoremap <up>     <nop>
 inoremap <down>   <nop>
@@ -146,8 +146,8 @@ nnoremap <esc><esc> :nohlsearch<cr>
 
 " Lines movements {{{1
 
-noremap <c-j> :m .+1<cr>==
-noremap <c-k> :m .-2<cr>==
+nnoremap <c-j> :m .+1<cr>==
+nnoremap <c-k> :m .-2<cr>==
 vnoremap <c-j> :m '>+1<cr>gv=gv
 vnoremap <c-k> :m '<-2<cr>gv=gv
 
