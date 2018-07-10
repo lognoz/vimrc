@@ -103,6 +103,9 @@ nnoremap <leader>r :source ~/.vim/vimrc<cr>
 " Make dot work over visual line selections
 xnoremap . :norm.<cr>
 
+" Execute a macro over visual line selections
+xnoremap Q :'<,'>:normal @q<cr>
+
 " Indentation {{{1
 
 set autoindent
