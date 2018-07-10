@@ -106,6 +106,10 @@ xnoremap . :norm.<cr>
 " Execute a macro over visual line selections
 xnoremap Q :'<,'>:normal @q<cr>
 
+" Smarter j and k navigation
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
+
 " Indentation {{{1
 
 set autoindent
