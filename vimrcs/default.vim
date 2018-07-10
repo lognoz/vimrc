@@ -100,6 +100,9 @@ command! Q q
 " Reloading vimrc
 nnoremap <leader>r :source ~/.vim/vimrc<cr>
 
+" Make dot work over visual line selections
+xnoremap . :norm.<cr>
+
 " Indentation {{{1
 
 set autoindent
