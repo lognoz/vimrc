@@ -91,12 +91,6 @@ inoremap <down>   <nop>
 inoremap <left>   <nop>
 inoremap <right>  <nop>
 
-" Rewrite command
-command! WQ wq
-command! Wq wq
-command! W w
-command! Q q
-
 " Reloading vimrc
 nnoremap <leader>r :source ~/.vim/vimrc<cr>
 
