@@ -35,6 +35,7 @@ call vundle#begin()
 	Plugin 'jiangmiao/auto-pairs'          " Autoclose brackets, quotes, etc.
 	Plugin 'terryma/vim-multiple-cursors'  " Replace by groups of same word
 	Plugin 'majutsushi/tagbar'             " File information (installation with pacman)
+	Plugin 'matchit.zip'                   " Configure % to match more than just single characters
 
 	" Snippets
 	Plugin 'garbas/vim-snipmate'           " Provide snippets manager
