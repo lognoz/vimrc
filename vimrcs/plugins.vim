@@ -24,7 +24,6 @@ call vundle#begin()
 	" Git helpers
 	Plugin 'airblade/vim-gitgutter'        " Show git diff
 	Plugin 'tpope/vim-fugitive'            " Make git usable with vim
-	Plugin 'gregsexton/gitv'               " Gitk for vim
 
 	" Text helpers
 	Plugin 'tpope/vim-speeddating'         " Provide date, roman number increment and decrement
