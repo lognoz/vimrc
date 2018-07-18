@@ -1,5 +1,5 @@
 " ============================================================================
-" File:        colorscheme.vim
+" File:        autocmds.vim
 " Author:      Marc-Antoine Loignon <info@lognoz.com>
 " Licence:     Vim licence
 " Website:     https://www.gitlab.com/lognoz/vimrc
@@ -13,13 +13,18 @@
 "  from the use of this software.
 " ============================================================================
 
-colorscheme onedark
+if has('autocmd')
+	augroup HighlightWhitespace
+		match Whitespace /\s\+$/
+		autocmd BufWinEnter * match Whitespace /\s\+$/
+		autocmd InsertEnter * match Whitespace /\s\+\%#\@<!$/
+		autocmd InsertLeave * match Whitespace /\s\+$/
+		autocmd BufWinLeave * call clearmatches()
+	augroup END
 
-highlight Normal      ctermbg=8
-highlight LineNr      ctermfg=239  
-highlight NonText     ctermfg=234
-highlight CursorLine  ctermbg=233
-highlight SpecialKey  ctermfg=234
-highlight Pmenu       ctermbg=232  ctermfg=239
-highlight PmenuSel    ctermfg=250  ctermbg=232
-highlight Whitespace  ctermbg=11
+	augroup Restore
+		autocmd!
+		autocmd BufWinLeave ?* mkview
+		autocmd BufWinEnter ?* silent loadview
+	augroup END
+endif

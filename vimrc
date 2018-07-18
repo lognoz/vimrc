@@ -22,3 +22,4 @@ filetype indent on
 source ~/.vim/setting/default.vim
 source ~/.vim/setting/plugins.vim
 source ~/.vim/setting/colorscheme.vim
+source ~/.vim/setting/autocmds.vim

@@ -178,10 +178,4 @@ endfunction
 
 inoremap <cr> <c-r>=AutoIndentHtmlTags()<cr>
 
-" Restore cursor and folds {{{1
 
-augroup Restore
-	autocmd!
-	autocmd BufWinLeave ?* mkview
-	autocmd BufWinEnter ?* silent loadview
-augroup END
