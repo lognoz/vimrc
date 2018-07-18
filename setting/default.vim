@@ -103,9 +103,6 @@ set hlsearch
 set incsearch
 set showmatch
 
-autocmd InsertEnter * :let @/=""
-autocmd InsertLeave * :let @/=""
-
 nnoremap <esc><esc> :nohlsearch<cr>
 
 " Lines movements {{{1
