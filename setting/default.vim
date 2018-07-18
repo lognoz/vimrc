@@ -59,16 +59,6 @@ set cm=blowfish2
 " Suffixes that get lower priority when doing tab completion for filenames.
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png,.jpg
 
-" Change map leader
-map <space> <leader>
-
-" Copy and paste in clipboard
-nnoremap <leader>p "+p
-nnoremap <leader>y "+y
-
-" Shortcut to write
-nnoremap <leader>w :w<cr>
-
 " Use black hole register to delete the empty line
 nnoremap <expr> dd (getline('.') =~ '^\s*$' && v:register == '"' ? '"_' : '').'dd'
 
@@ -143,17 +133,6 @@ nnoremap <c-j> :m .+1<cr>==
 nnoremap <c-k> :m .-2<cr>==
 vnoremap <c-j> :m '>+1<cr>gv=gv
 vnoremap <c-k> :m '<-2<cr>gv=gv
-
-" Tabs movements {{{1
-
-map <leader>1 1gt
-map <leader>2 2gt
-map <leader>3 3gt
-map <leader>4 4gt
-map <leader>5 5gt
-map <leader>6 6gt
-map <leader>7 7gt
-map <leader>8 8gt
 
 " Autocomplete {{{1
 
