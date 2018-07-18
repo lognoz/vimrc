@@ -90,12 +90,6 @@ xnoremap Q :'<,'>:normal @q<cr>
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
 
-" Remapping escape key
-vnoremap <C-c> <Esc>
-xnoremap <C-c> <Esc>
-inoremap <Esc> <nop>
-vnoremap <Esc> <nop>
-
 " Indentation {{{1
 
 set autoindent
