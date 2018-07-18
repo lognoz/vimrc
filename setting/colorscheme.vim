@@ -16,7 +16,7 @@
 colorscheme onedark
 
 highlight Normal      ctermbg=8
-highlight LineNr      ctermfg=239  
+highlight LineNr      ctermfg=239
 highlight NonText     ctermfg=234
 highlight CursorLine  ctermbg=233
 highlight SpecialKey  ctermfg=234
