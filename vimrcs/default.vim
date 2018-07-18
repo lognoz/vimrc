@@ -181,12 +181,3 @@ augroup SaveCursor
 	autocmd!
 	autocmd BufReadPost * call setpos(".", getpos("'\""))
 augroup END
-
-" Update last change date {{{1
-
-function! SetEvents(type)
-	let line = search("\" Last Change:")
-	let date = strftime('%Y-%m-%d')
-endfunction
-
-autocmd FileType vim :call SetEvents('vim')
