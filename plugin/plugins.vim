@@ -13,41 +13,6 @@
 "  from the use of this software.
 " ============================================================================
 
-" Section: Plugins configuration
-" Load plugins {{{1
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-	" Dependencies
-	Plugin 'VundleVim/Vundle.vim'          " Plugin manager
-
-	" Git helpers
-	Plugin 'airblade/vim-gitgutter'        " Show git diff
-	Plugin 'tpope/vim-fugitive'            " Make git usable with vim
-
-	" Text helpers
-	Plugin 'tpope/vim-speeddating'         " Provide date, roman number increment and decrement
-
-	" Dev tools
-	Plugin 'mattn/emmet-vim'               " Provide support for HTML tags
-	Plugin 'tpope/vim-surround'            " Provide mapping (parentheses, brackets, quotes, etc.)
-	Plugin 'sjl/gundo.vim'                 " Visualize vim undo
-	Plugin 'jiangmiao/auto-pairs'          " Autoclose brackets, quotes, etc.
-	Plugin 'terryma/vim-multiple-cursors'  " Replace by groups of same word
-
-	" Snippets
-	Plugin 'garbas/vim-snipmate'           " Provide snippets manager
-	Plugin 'MarcWeber/vim-addon-mw-utils'  " Dependency addon
-	Plugin 'tomtom/tlib_vim'               " Dependancy library
-
-	" Syntax
-	Plugin 'stanangeloff/php.vim'          " PHP syntax files
-	Plugin 'scrooloose/syntastic'          " Errors checker
-
-	" Colorscheme
-	Plugin 'joshdick/onedark.vim'         " Principal theme
-call vundle#end()
-
 " Gundo mapping {{{1
 
 noremap <c-g> :GundoToggle<cr>
@@ -78,5 +43,3 @@ function! ToggleExplorer()
 endfunction
 
 noremap <C-t> :call ToggleExplorer()<cr>
-
-" }}}
