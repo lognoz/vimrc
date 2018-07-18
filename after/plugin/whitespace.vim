@@ -1,5 +1,5 @@
 " ============================================================================
-" File:        autocmds.vim
+" File:        whitespace.vim
 " Author:      Marc-Antoine Loignon <info@lognoz.com>
 " Licence:     Vim licence
 " Website:     https://www.gitlab.com/lognoz/vimrc
@@ -14,14 +14,11 @@
 " ============================================================================
 
 if has('autocmd')
-	augroup Restore
-		autocmd!
-		autocmd BufWinLeave ?* mkview
-		autocmd BufWinEnter ?* silent loadview
-	augroup END
-
-	augroup RemoveHighlightingSearch
-		autocmd InsertEnter * :let @/=""
-		autocmd InsertLeave * :let @/=""
+	augroup HighlightWhitespace
+		match Whitespace /\s\+$/
+		autocmd BufWinEnter * match Whitespace /\s\+$/
+		autocmd InsertEnter * match Whitespace /\s\+\%#\@<!$/
+		autocmd InsertLeave * match Whitespace /\s\+$/
+		autocmd BufWinLeave * call clearmatches()
 	augroup END
 endif
