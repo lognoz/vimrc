@@ -109,7 +109,7 @@ nnoremap = ==
 nnoremap < <<
 nnoremap > >>
 
-" Backup, undo, swap {{{1
+" Backup, undo, swap, view {{{1
 
 set noswapfile
 
@@ -119,6 +119,9 @@ set backupdir=~/.vim/tmp/backup
 set undofile
 set undodir=~/.vim/tmp/undo
 set undolevels=1000
+
+set viewdir=~/.vim/tmp/view
+set viewoptions=cursor,folds
 
 " Search {{{1
 
