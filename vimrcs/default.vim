@@ -80,9 +80,6 @@ nnoremap - <c-x>
 noremap <tab> <c-o>
 noremap <s-tab> <c-i>
 
-" Reloading vimrc
-nnoremap <leader>r :source ~/.vim/vimrc<cr>
-
 " Make dot work over visual line selections
 xnoremap . :norm.<cr>
 
