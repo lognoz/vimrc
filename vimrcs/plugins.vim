@@ -34,8 +34,6 @@ call vundle#begin()
 	Plugin 'sjl/gundo.vim'                 " Visualize vim undo
 	Plugin 'jiangmiao/auto-pairs'          " Autoclose brackets, quotes, etc.
 	Plugin 'terryma/vim-multiple-cursors'  " Replace by groups of same word
-	Plugin 'majutsushi/tagbar'             " File information (installation with pacman)
-	Plugin 'matchit.zip'                   " Configure % to match more than just single characters
 
 	" Snippets
 	Plugin 'garbas/vim-snipmate'           " Provide snippets manager
@@ -49,21 +47,6 @@ call vundle#begin()
 	" Colorscheme
 	Plugin 'joshdick/onedark.vim'         " Principal theme
 call vundle#end()
-
-" Tagbar configuration {{{1
-
-noremap <c-e> :TagbarToggle<cr>
-let g:tagbar_autofocus = 1
-let g:tagbar_type_php  = {
-\ 'ctagstype' : 'php',
-\ 'kinds'     : [
-		\ 'i:interfaces',
-		\ 'c:classes',
-		\ 'd:constant definitions',
-		\ 'f:functions',
-		\ 'j:javascript functions:1'
-	\ ]
-\ }
 
 " Gundo mapping {{{1
 
