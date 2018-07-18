@@ -19,6 +19,6 @@ filetype on
 filetype plugin on
 filetype indent on
 
-source ~/.vim/vimrcs/default.vim
-source ~/.vim/vimrcs/plugins.vim
-source ~/.vim/vimrcs/colorscheme.vim
+source ~/.vim/setting/default.vim
+source ~/.vim/setting/plugins.vim
+source ~/.vim/setting/colorscheme.vim
