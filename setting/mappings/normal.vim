@@ -1,5 +1,5 @@
 " ============================================================================
-" File:        vimrc
+" File:        normal.vim
 " Author:      Marc-Antoine Loignon <info@lognoz.com>
 " Licence:     Vim licence
 " Website:     https://www.gitlab.com/lognoz/vimrc
@@ -13,16 +13,26 @@
 "  from the use of this software.
 " ============================================================================
 
-syntax on
-filetype on
+" Use black hole register to delete the empty line
+nnoremap <expr> dd (getline('.') =~ '^\s*$' && v:register == '"' ? '"_' : '').'dd'
 
-filetype plugin on
-filetype indent on
+" Increment numbers
+nnoremap + <c-a>
+nnoremap - <c-x>
 
-source ~/.vim/setting/default.vim
-source ~/.vim/plugin/vundle.vim
-source ~/.vim/plugin/git.vim
-source ~/.vim/setting/colorscheme.vim
-source ~/.vim/setting/autocmds.vim
-source ~/.vim/setting/mappings/leader.vim
-source ~/.vim/setting/mappings/normal.vim
+" Tab and shift-tab to traverse jump list
+noremap <tab> <c-o>
+noremap <s-tab> <c-i>
+
+" Smarter j and k navigation
+nnoremap <expr> j v:count ? 'j' : 'gj'
+nnoremap <expr> k v:count ? 'k' : 'gk'
+
+" Indentation
+nnoremap = ==
+nnoremap < <<
+nnoremap > >>
+
+" Line mouvement
+nnoremap <c-j> :m .+1<cr>==
+nnoremap <c-k> :m .-2<cr>==

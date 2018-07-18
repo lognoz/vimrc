@@ -59,26 +59,11 @@ set cm=blowfish2
 " Suffixes that get lower priority when doing tab completion for filenames.
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png,.jpg
 
-" Use black hole register to delete the empty line
-nnoremap <expr> dd (getline('.') =~ '^\s*$' && v:register == '"' ? '"_' : '').'dd'
-
-" Increment numbers
-nnoremap + <c-a>
-nnoremap - <c-x>
-
-" Tab and shift-tab to traverse jump list
-noremap <tab> <c-o>
-noremap <s-tab> <c-i>
-
 " Make dot work over visual line selections
 xnoremap . :norm.<cr>
 
 " Execute a macro over visual line selections
 xnoremap Q :'<,'>:normal @q<cr>
-
-" Smarter j and k navigation
-nnoremap <expr> j v:count ? 'j' : 'gj'
-nnoremap <expr> k v:count ? 'k' : 'gk'
 
 " Indentation {{{1
 
@@ -94,10 +79,6 @@ set tabstop=3
 vnoremap < <gv
 vnoremap > >gv
 vnoremap = =gv
-
-nnoremap = ==
-nnoremap < <<
-nnoremap > >>
 
 " Backup, undo, swap, view {{{1
 
@@ -128,9 +109,6 @@ autocmd InsertLeave * :let @/=""
 nnoremap <esc><esc> :nohlsearch<cr>
 
 " Lines movements {{{1
-
-nnoremap <c-j> :m .+1<cr>==
-nnoremap <c-k> :m .-2<cr>==
 vnoremap <c-j> :m '>+1<cr>gv=gv
 vnoremap <c-k> :m '<-2<cr>gv=gv
 
@@ -156,5 +134,3 @@ function! AutoIndentHtmlTags()
 endfunction
 
 inoremap <cr> <c-r>=AutoIndentHtmlTags()<cr>
-
-
