@@ -20,6 +20,7 @@ filetype plugin on
 filetype indent on
 
 source ~/.vim/setting/default.vim
-source ~/.vim/setting/plugins.vim
+source ~/.vim/plugin/vundle.vim
+source ~/.vim/plugin/git.vim
 source ~/.vim/setting/colorscheme.vim
 source ~/.vim/setting/autocmds.vim
