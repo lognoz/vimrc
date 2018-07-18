@@ -178,9 +178,10 @@ endfunction
 
 inoremap <cr> <c-r>=AutoIndentHtmlTags()<cr>
 
-" Autofocus in file {{{1
+" Restore cursor and folds {{{1
 
-augroup SaveCursor
+augroup Restore
 	autocmd!
-	autocmd BufReadPost * call setpos(".", getpos("'\""))
+	autocmd BufWinLeave ?* mkview
+	autocmd BufWinEnter ?* silent loadview
 augroup END
