@@ -80,17 +80,6 @@ nnoremap - <c-x>
 noremap <tab> <c-o>
 noremap <s-tab> <c-i>
 
-" Disabled arrows keys
-nnoremap <up>      <nop>
-nnoremap <down>    <nop>
-nnoremap <left>    <nop>
-nnoremap <right>   <nop>
-
-inoremap <up>     <nop>
-inoremap <down>   <nop>
-inoremap <left>   <nop>
-inoremap <right>  <nop>
-
 " Reloading vimrc
 nnoremap <leader>r :source ~/.vim/vimrc<cr>
 
@@ -106,7 +95,7 @@ nnoremap <expr> k v:count ? 'k' : 'gk'
 
 " Remapping escape key
 vnoremap <C-c> <Esc>
-inoremap <C-c> <Esc>
+xnoremap <C-c> <Esc>
 inoremap <Esc> <nop>
 vnoremap <Esc> <nop>
 
