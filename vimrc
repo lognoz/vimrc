@@ -38,6 +38,9 @@ if has('packages')
 		Plugin 'sjl/gundo.vim'                 " Visualize vim undo
 		Plugin 'jiangmiao/auto-pairs'          " Autoclose brackets, quotes, etc.
 		Plugin 'terryma/vim-multiple-cursors'  " Replace by groups of same word
+		Plugin 'scrooloose/nerdtree'
+		Plugin 'lifepillar/vim-mucomplete'
+		Plugin 'sirver/ultisnips'
 
 		" Syntax
 		Plugin 'stanangeloff/php.vim'          " PHP syntax files
