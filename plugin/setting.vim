@@ -13,20 +13,19 @@
 "  from the use of this software.
 " ============================================================================
 
-" Section: Preferences
-" Editing behaviour {{{1
-
-set autoread         " auto read when file is changed from outside
-set cursorline       " highlight cursor line
-set hid              " hiding buffers even though they contain modifications
-set history=50       " keep 50 lines of command line history
-set mouse=a          " enable mouse
-set nocompatible     " use Vim defaults instead of 100% vi compatibility
-set noruler          " turn off ruler
-set showcmd          " show commands
-set showmode         " show current mode
-set wildchar=<tab>   " start wild expansion using <tab>
-set wildmenu         " define wildmenu
+set autoread         " Auto read when file is changed from outside
+set cursorline       " Highlight cursor line
+set hid              " Hiding buffers even though they contain modifications
+set history=50       " Keep 50 lines of command line history
+set mouse=a          " Enable mouse
+set nocompatible     " Use Vim defaults instead of 100% vi compatibility
+set noruler          " Turn off ruler
+set showcmd          " Show commands
+set showmode         " Show current mode
+set wildchar=<tab>   " Start wild expansion using <tab>
+set wildmenu         " Define wildmenu
+set cm=blowfish2     " Encryption type
+set noswapfile       " No swap
 
 " Active fold method
 set foldmethod=syntax
@@ -53,20 +52,10 @@ set timeout timeoutlen=1000 ttimeoutlen=50
 set list
 set listchars=tab:\»\ ,trail:·,eol:¬,extends:→,precedes:←
 
-" Encryption
-set cm=blowfish2
-
 " Suffixes that get lower priority when doing tab completion for filenames.
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.png,.jpg
 
-" Make dot work over visual line selections
-xnoremap . :norm.<cr>
-
-" Execute a macro over visual line selections
-xnoremap Q :'<,'>:normal @q<cr>
-
-" Indentation {{{1
-
+" Indentation
 set autoindent
 set copyindent
 set noexpandtab
@@ -76,26 +65,7 @@ set smartindent
 set softtabstop=0
 set tabstop=3
 
-vnoremap < <gv
-vnoremap > >gv
-vnoremap = =gv
-
-" Backup, undo, swap, view {{{1
-
-set noswapfile
-
-set backup
-set backupdir=~/.vim/tmp/backup
-
-set undofile
-set undodir=~/.vim/tmp/undo
-set undolevels=1000
-
-set viewdir=~/.vim/tmp/view
-set viewoptions=cursor,folds
-
-" Search {{{1
-
+" Search
 set ignorecase
 set smartcase
 set gdefault
@@ -103,31 +73,15 @@ set hlsearch
 set incsearch
 set showmatch
 
-nnoremap <esc><esc> :nohlsearch<cr>
+" Backup
+set backup
+set backupdir=~/.vim/tmp/backup
 
-" Lines movements {{{1
-vnoremap <c-j> :m '>+1<cr>gv=gv
-vnoremap <c-k> :m '<-2<cr>gv=gv
+" Undo
+set undofile
+set undodir=~/.vim/tmp/undo
+set undolevels=1000
 
-" Autocomplete {{{1
-
-set completeopt=longest,menuone
-autocmd FileType css,scss set omnifunc=csscomplete#CompleteCSS
-
-" }}}
-
-" Section: Fonctionalities
-" Html tags {{{1
-
-function! AutoIndentHtmlTags()
-	let line = getline('.')
-	let current_position = getcurpos()[2] -1
-
-	if line[current_position] == "<" && line[current_position - 1] == ">"
-		return "\<cr>\<cr>\<up>\<tab>"
-	else
-		return "\<cr>"
-	endif
-endfunction
-
-inoremap <cr> <c-r>=AutoIndentHtmlTags()<cr>
+" View
+set viewdir=~/.vim/tmp/view
+set viewoptions=cursor,folds

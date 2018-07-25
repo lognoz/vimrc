@@ -1,5 +1,5 @@
 " ============================================================================
-" File:        leader.vim
+" File:        visual.vim
 " Author:      Marc-Antoine Loignon <info@lognoz.com>
 " Licence:     Vim licence
 " Website:     https://www.gitlab.com/lognoz/vimrc
@@ -13,33 +13,20 @@
 "  from the use of this software.
 " ============================================================================
 
-" Change map leader
-map <space> <leader>
+" Make dot work over visual line selections
+xnoremap . :norm.<cr>
 
-" Copy and paste in clipboard
-nnoremap <leader>p "+p
-nnoremap <leader>y "+y
+" Execute a macro over visual line selections
+xnoremap Q :'<,'>:normal @q<cr>
 
-" Shortcut to write
-nnoremap <leader>w :w<cr>
+" Search
+nnoremap <esc><esc> :nohlsearch<cr>
 
-" Tabs movements
-map <leader>1 1gt
-map <leader>2 2gt
-map <leader>3 3gt
-map <leader>4 4gt
-map <leader>5 5gt
-map <leader>6 6gt
-map <leader>7 7gt
-map <leader>8 8gt
+" Indentation
+vnoremap < <gv
+vnoremap > >gv
+vnoremap = =gv
 
-" Git mappings
-nnoremap <leader>ga :Git add %:p<cr><cr>
-nnoremap <leader>gs :Gstatus<cr>
-nnoremap <leader>gd :Gdiff<cr>
-nnoremap <leader>go :Git checkout<space>
-nnoremap <leader>gc :Gmessage<space>
-nnoremap <leader>gb :Git branch<cr>
-nnoremap <leader>gl :Git log<cr>
-nnoremap <leader>gpl :GitPullHead<cr>
-nnoremap <leader>gps :GitPushHead<cr>
+" Lines movements
+vnoremap <c-j> :m '>+1<cr>gv=gv
+vnoremap <c-k> :m '<-2<cr>gv=gv
