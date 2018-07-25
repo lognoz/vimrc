@@ -39,11 +39,6 @@ if has('packages')
 		Plugin 'jiangmiao/auto-pairs'          " Autoclose brackets, quotes, etc.
 		Plugin 'terryma/vim-multiple-cursors'  " Replace by groups of same word
 
-		" Snippets
-		Plugin 'garbas/vim-snipmate'           " Provide snippets manager
-		Plugin 'MarcWeber/vim-addon-mw-utils'  " Dependency addon
-		Plugin 'tomtom/tlib_vim'               " Dependancy library
-
 		" Syntax
 		Plugin 'stanangeloff/php.vim'          " PHP syntax files
 		Plugin 'scrooloose/syntastic'          " Errors checker
