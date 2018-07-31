@@ -20,10 +20,6 @@ nnoremap <expr> dd (getline('.') =~ '^\s*$' && v:register == '"' ? '"_' : '').'d
 nnoremap + <c-a>
 nnoremap - <c-x>
 
-" Tab and shift-tab to traverse jump list
-noremap <tab> <c-o>
-noremap <s-tab> <c-i>
-
 " Smarter j and k navigation
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
