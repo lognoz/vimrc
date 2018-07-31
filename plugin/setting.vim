@@ -27,6 +27,12 @@ set wildmenu         " Define wildmenu
 set cm=blowfish2     " Encryption type
 set noswapfile       " No swap
 
+" Completion
+set completeopt+=menuone,noinsert,noselect
+set completeopt-=preview
+set noshowmode
+set shortmess=c
+
 " Active fold method
 set foldmethod=syntax
 set fdm=marker
