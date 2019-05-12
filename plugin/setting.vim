@@ -76,3 +76,6 @@ set undolevels=1000
 " View
 set viewdir=~/.vim/tmp/view
 set viewoptions=cursor,folds
+
+" Tags
+set tags=./tags;,tags;
