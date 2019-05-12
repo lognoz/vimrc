@@ -9,17 +9,18 @@ if has('packages')
 	call vundle#begin()
 		Plugin 'VundleVim/Vundle.vim'          " Plugin manager
 		Plugin 'airblade/vim-gitgutter'        " Show git diff
+		Plugin 'jiangmiao/auto-pairs'          " Autoclose brackets, quotes, etc.
+		Plugin 'joshdick/onedark.vim'          " Principal theme
+		Plugin 'junegunn/fzf.vim'              " A command-line fuzzy finder
+		Plugin 'lifepillar/vim-mucomplete'     " Autocompletion
+		Plugin 'scrooloose/nerdtree'           " Project tree
+		Plugin 'scrooloose/syntastic'          " Errors checker
+		Plugin 'sirver/ultisnips'              " Snippets
+		Plugin 'sjl/gundo.vim'                 " Visualize vim undo
+		Plugin 'stanangeloff/php.vim'          " PHP syntax files
+		Plugin 'terryma/vim-multiple-cursors'  " Replace by groups of same word
 		Plugin 'tpope/vim-fugitive'            " Make git usable with vim
 		Plugin 'tpope/vim-speeddating'         " Provide date, roman number increment and decrement
 		Plugin 'tpope/vim-surround'            " Provide mapping (parentheses, brackets, quotes, etc.)
-		Plugin 'sjl/gundo.vim'                 " Visualize vim undo
-		Plugin 'jiangmiao/auto-pairs'          " Autoclose brackets, quotes, etc.
-		Plugin 'terryma/vim-multiple-cursors'  " Replace by groups of same word
-		Plugin 'scrooloose/nerdtree'           " Project tree
-		Plugin 'lifepillar/vim-mucomplete'     " Autocompletion
-		Plugin 'sirver/ultisnips'              " Snippets
-		Plugin 'stanangeloff/php.vim'          " PHP syntax files
-		Plugin 'scrooloose/syntastic'          " Errors checker
-		Plugin 'joshdick/onedark.vim'          " Principal theme
 	call vundle#end()
 endif
