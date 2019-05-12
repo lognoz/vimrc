@@ -12,7 +12,6 @@ if has('packages')
 		Plugin 'jiangmiao/auto-pairs'          " Autoclose brackets, quotes, etc.
 		Plugin 'joshdick/onedark.vim'          " Principal theme
 		Plugin 'junegunn/fzf.vim'              " A command-line fuzzy finder
-		Plugin 'lifepillar/vim-mucomplete'     " Autocompletion
 		Plugin 'scrooloose/nerdtree'           " Project tree
 		Plugin 'scrooloose/syntastic'          " Errors checker
 		Plugin 'sirver/ultisnips'              " Snippets
