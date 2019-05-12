@@ -21,5 +21,6 @@ if has('packages')
 		Plugin 'tpope/vim-fugitive'            " Make git usable with vim
 		Plugin 'tpope/vim-speeddating'         " Provide date, roman number increment and decrement
 		Plugin 'tpope/vim-surround'            " Provide mapping (parentheses, brackets, quotes, etc.)
+		Plugin 'kien/ctrlp.vim'                " Fuzzy file, buffer, mru, tag, etc finder
 	call vundle#end()
 endif
