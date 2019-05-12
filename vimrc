@@ -11,7 +11,6 @@ if has('packages')
 		Plugin 'airblade/vim-gitgutter'        " Show git diff
 		Plugin 'jiangmiao/auto-pairs'          " Autoclose brackets, quotes, etc.
 		Plugin 'joshdick/onedark.vim'          " Principal theme
-		Plugin 'junegunn/fzf.vim'              " A command-line fuzzy finder
 		Plugin 'scrooloose/nerdtree'           " Project tree
 		Plugin 'scrooloose/syntastic'          " Errors checker
 		Plugin 'sirver/ultisnips'              " Snippets
