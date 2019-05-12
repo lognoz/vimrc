@@ -28,3 +28,8 @@ nnoremap <leader>gb :Git branch<cr>
 nnoremap <leader>gl :Git log<cr>
 nnoremap <leader>gpl :GitPullHead<cr>
 nnoremap <leader>gps :GitPushHead<cr>
+
+" Plugins mappings
+noremap <leader>gu :GundoToggle<cr>
+noremap <leader>t :NERDTreeToggle<cr>
+noremap <leader>/ :FZF<cr>

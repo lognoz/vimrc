@@ -9,6 +9,3 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetsDir = '~/.vim/snippet'
 let g:UltiSnipsSnippetDirectories=["snippet"]
 let g:UltiSnipsEditSplit="vertical"
-
-noremap <leader>u :GundoToggle<cr>
-noremap <leader>t :NERDTreeToggle<cr>
