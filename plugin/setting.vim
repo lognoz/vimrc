@@ -12,6 +12,10 @@ set wildmenu         " Define wildmenu
 set cm=blowfish2     " Encryption type
 set noswapfile       " No swap
 
+" Allow local vimrc
+set exrc
+set secure
+
 " Completion
 set completeopt+=menuone,noinsert,noselect
 set completeopt-=preview
