@@ -21,3 +21,6 @@ nnoremap <c-k> :m .-2<cr>==
 " Go to non-staged changes in file
 nnoremap <Up> :GitGutterPrevHunk<CR>
 nnoremap <Down> :GitGutterNextHunk<CR>
+
+" Quick executing throw-away macros with the q register
+nnoremap Q @q
