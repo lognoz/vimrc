@@ -17,3 +17,7 @@ nnoremap > >>
 " Line mouvement
 nnoremap <c-j> :m .+1<cr>==
 nnoremap <c-k> :m .-2<cr>==
+
+" Go to non-staged changes in file
+nnoremap <Up> :GitGutterPrevHunk<CR>
+nnoremap <Down> :GitGutterNextHunk<CR>
