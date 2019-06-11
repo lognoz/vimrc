@@ -5,7 +5,7 @@ xnoremap . :norm.<cr>
 xnoremap Q :'<,'>:normal @q<cr>
 
 " Search
-nnoremap <esc><esc> :nohlsearch<cr>
+nnoremap <esc> :nohlsearch<cr>
 
 " Indentation
 vnoremap < <gv
