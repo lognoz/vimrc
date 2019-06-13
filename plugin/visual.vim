@@ -4,9 +4,6 @@ xnoremap . :norm.<cr>
 " Execute a macro over visual line selections
 xnoremap Q :'<,'>:normal @q<cr>
 
-" Search
-nnoremap <esc> :nohlsearch<cr>
-
 " Indentation
 vnoremap < <gv
 vnoremap > >gv
