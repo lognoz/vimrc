@@ -3,3 +3,4 @@ if has('folding')
 endif
 
 call lognoz#functions#spell()
+call lognoz#git#set_helpers()
