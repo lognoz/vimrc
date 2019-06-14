@@ -1,5 +1,5 @@
 " Turn on spell-checking
-function! lognoz#spell() abort
+function! lognoz#functions#spell() abort
 	if has('syntax')
 		setlocal spell
 		setlocal spelllang=en
@@ -11,7 +11,7 @@ function! lognoz#spell() abort
 endfunction
 
 " Switch to plaintext mode
-function! lognoz#plaintext() abort
+function! lognoz#functions#plaintext() abort
 	setlocal wrap
 	setlocal nolist
 
@@ -24,7 +24,7 @@ function! lognoz#plaintext() abort
 	setlocal expandtab
 
 	" Turn on spell-checking
-	call lognoz#spell()
+	call lognoz#functions#spell()
 
 	if has('autocmd')
 		autocmd BufWinEnter <buffer> match Error /\s\+$/
