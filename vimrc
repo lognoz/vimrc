@@ -26,3 +26,7 @@ if &loadplugins
 		call pathogen#infect('pack/bundle/opt/{}')
 	endif
 endif
+
+" Add local vimrc loader
+let g:localvimrc_name = ['.vimrc', '.lvimrc']
+let g:localvimrc_ask = 0
