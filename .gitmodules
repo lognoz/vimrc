@@ -4,3 +4,6 @@
 [submodule "pack/bundle/opt/php"]
 	path = pack/bundle/opt/php
 	url = https://github.com/stanangeloff/php.vim
+[submodule "pack/bundle/opt/editorconfig"]
+	path = pack/bundle/opt/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim
