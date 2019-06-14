@@ -1,9 +1,51 @@
 [submodule "pack/bundle/opt/onedark"]
 	path = pack/bundle/opt/onedark
 	url = https://github.com/joshdick/onedark.vim
+
 [submodule "pack/bundle/opt/php"]
 	path = pack/bundle/opt/php
 	url = https://github.com/stanangeloff/php.vim
+
 [submodule "pack/bundle/opt/editorconfig"]
 	path = pack/bundle/opt/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim
+
+[submodule "pack/bundle/opt/gitgutter"]
+	path = pack/bundle/opt/gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+
+[submodule "pack/bundle/opt/nerdtree"]
+	path = pack/bundle/opt/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+
+[submodule "pack/bundle/opt/syntastic"]
+	path = pack/bundle/opt/syntastic
+	url = https://github.com/scrooloose/syntastic
+
+[submodule "pack/bundle/opt/ultisnips"]
+	path = pack/bundle/opt/ultisnips
+	url = https://github.com/sirver/ultisnips
+
+[submodule "pack/bundle/opt/undotree"]
+	path = pack/bundle/opt/undotree
+	url = https://github.com/mbbill/undotree
+
+[submodule "pack/bundle/opt/multiple-cursors"]
+	path = pack/bundle/opt/multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors
+
+[submodule "pack/bundle/opt/fugitive"]
+	path = pack/bundle/opt/fugitive
+	url = https://github.com/tpope/vim-fugitive
+
+[submodule "pack/bundle/opt/surround"]
+	path = pack/bundle/opt/surround
+	url = https://github.com/tpope/vim-surround
+
+[submodule "pack/bundle/opt/easy-align"]
+	path = pack/bundle/opt/easy-align
+	url = https://github.com/junegunn/vim-easy-align
+
+[submodule "pack/bundle/opt/speed-dating"]
+	path = pack/bundle/opt/speed-dating
+	url = https://github.com/tpope/vim-speeddating
