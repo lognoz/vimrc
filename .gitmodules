@@ -53,3 +53,7 @@
 [submodule "pack/bundle/opt/indent-line"]
 	path = pack/bundle/opt/indent-line
 	url = https://github.com/Yggdroot/indentLine
+
+[submodule "pack/pathogen/opt/pathogen"]
+	path = pack/pathogen/opt/pathogen
+	url = https://github.com/tpope/vim-pathogen
