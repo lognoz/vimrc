@@ -25,11 +25,4 @@ function! lognoz#functions#plaintext() abort
 
 	" Turn on spell-checking
 	call lognoz#functions#spell()
-
-	if has('autocmd')
-		autocmd BufWinEnter <buffer> match Error /\s\+$/
-		autocmd InsertEnter <buffer> match Error /\s\+\%#\@<!$/
-		autocmd InsertLeave <buffer> match Error /\s\+$/
-		autocmd BufWinLeave <buffer> call clearmatches()
-	endif
 endfunction
