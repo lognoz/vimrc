@@ -1,3 +1,6 @@
 [submodule "pack/bundle/opt/onedark"]
 	path = pack/bundle/opt/onedark
 	url = https://github.com/joshdick/onedark.vim
+[submodule "pack/bundle/opt/php"]
+	path = pack/bundle/opt/php
+	url = https://github.com/stanangeloff/php.vim
