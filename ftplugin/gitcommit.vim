@@ -2,4 +2,4 @@ if has('folding')
 	setlocal nofoldenable
 endif
 
-call lognoz#spell()
+call lognoz#functions#spell()
