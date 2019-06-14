@@ -10,7 +10,7 @@ if &loadplugins
 		packadd! editorconfig
 		packadd! fugitive
 		packadd! gitgutter
-		packadd! indent-line
+		packadd! markup-language
 		packadd! multiple-cursors
 		packadd! nerdtree
 		packadd! onedark
