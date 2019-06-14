@@ -16,11 +16,6 @@ set noswapfile       " No swap
 set exrc
 set secure
 
-" Completion
-set completeopt+=menuone,noinsert,noselect
-set completeopt-=preview
-set shortmess=c
-
 " Active fold method
 set foldmethod=syntax
 set fdm=marker
