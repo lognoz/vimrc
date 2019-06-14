@@ -23,11 +23,12 @@ nnoremap <leader>ga :Git add %:p<cr><cr>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>go :Git checkout<space>
-nnoremap <leader>gc :Gmessage<space>
+nnoremap <leader>gc :Gcommit<cr>i
 nnoremap <leader>gb :Git branch<cr>
 nnoremap <leader>gl :Git log<cr>
 nnoremap <leader>gpl :GitPullHead<cr>
 nnoremap <leader>gps :GitPushHead<cr>
+
 
 " Plugins mappings
 noremap <leader>gu :GundoToggle<cr>
