@@ -15,6 +15,7 @@ if has('packages')
 		Plugin 'scrooloose/syntastic'          " Errors checker
 		Plugin 'sirver/ultisnips'              " Snippets
 		Plugin 'sjl/gundo.vim'                 " Visualize vim undo
+		Plugin 'editorconfig/editorconfig-vim' " Helps maintain consistent coding styles
 		Plugin 'stanangeloff/php.vim'          " PHP syntax files
 		Plugin 'terryma/vim-multiple-cursors'  " Replace by groups of same word
 		Plugin 'tpope/vim-fugitive'            " Make git usable with vim
