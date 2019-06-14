@@ -19,7 +19,6 @@ set secure
 " Completion
 set completeopt+=menuone,noinsert,noselect
 set completeopt-=preview
-set noshowmode
 set shortmess=c
 
 " Active fold method
