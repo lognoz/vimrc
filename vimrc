@@ -10,6 +10,7 @@ if &loadplugins
 		packadd! editorconfig
 		packadd! fugitive
 		packadd! gitgutter
+		packadd! local-vimrc
 		packadd! markup-language
 		packadd! multiple-cursors
 		packadd! nerdtree

@@ -57,3 +57,7 @@
 [submodule "pack/bundle/opt/markup-language"]
 	path = pack/bundle/opt/markup-language
 	url = https://github.com/lognoz/vim-markup-language
+
+[submodule "pack/bundle/opt/local-vimrc"]
+	path = pack/bundle/opt/local-vimrc
+	url = https://github.com/embear/vim-localvimrc
