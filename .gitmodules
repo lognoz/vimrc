@@ -49,3 +49,6 @@
 [submodule "pack/bundle/opt/speed-dating"]
 	path = pack/bundle/opt/speed-dating
 	url = https://github.com/tpope/vim-speeddating
+[submodule "pack/bundle/opt/indent-line"]
+	path = pack/bundle/opt/indent-line
+	url = https://github.com/Yggdroot/indentLine
