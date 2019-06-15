@@ -12,12 +12,6 @@ if has('gui')
 	set guioptions-=r
 endif
 
-syntax on
-filetype on
-
-filetype plugin on
-filetype indent on
-
 if &loadplugins
 	if has('packages')
 		packadd! easy-align
@@ -40,6 +34,9 @@ if &loadplugins
 		call pathogen#infect('pack/bundle/opt/{}')
 	endif
 endif
+
+syntax on
+filetype plugin indent on
 
 " Add local vimrc loader
 let g:localvimrc_name = ['.vimrc']
