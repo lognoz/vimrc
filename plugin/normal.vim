@@ -18,9 +18,7 @@ nnoremap > >>
 nnoremap <c-j> :m .+1<cr>==
 nnoremap <c-k> :m .-2<cr>==
 
-" Go to non-staged changes in file
-noremap <up> :GitGutterPrevHunk<cr>
-noremap <down> :GitGutterNextHunk<cr>
+" Disabled left and right keys
 noremap <left> <nop>
 noremap <right> <nop>
 
