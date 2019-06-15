@@ -19,8 +19,10 @@ nnoremap <c-j> :m .+1<cr>==
 nnoremap <c-k> :m .-2<cr>==
 
 " Go to non-staged changes in file
-map <up> :GitGutterPrevHunk<cr>
-map <down> :GitGutterNextHunk<cr>
+noremap <up> :GitGutterPrevHunk<cr>
+noremap <down> :GitGutterNextHunk<cr>
+noremap <left> <nop>
+noremap <right> <nop>
 
 " Search
 nnoremap <esc><esc> :nohlsearch<cr>
