@@ -1,3 +1,17 @@
+if v:progname == 'vi'
+	set noloadplugins
+endif
+
+if has('gui')
+	set guioptions-=L
+	set guioptions-=R
+	set guioptions-=T
+	set guioptions-=b
+	set guioptions-=l
+	set guioptions-=m
+	set guioptions-=r
+endif
+
 syntax on
 filetype on
 
@@ -28,5 +42,5 @@ if &loadplugins
 endif
 
 " Add local vimrc loader
-let g:localvimrc_name = ['.vimrc', '.lvimrc']
+let g:localvimrc_name = ['.vimrc']
 let g:localvimrc_ask = 0
