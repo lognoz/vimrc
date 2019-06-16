@@ -61,3 +61,7 @@
 [submodule "pack/bundle/opt/local-vimrc"]
 	path = pack/bundle/opt/local-vimrc
 	url = https://github.com/embear/vim-localvimrc
+
+[submodule "pack/bundle/opt/completor"]
+	path = pack/bundle/opt/completor
+	url = https://github.com/maralla/completor.vim
