@@ -498,44 +498,8 @@ snippet collator_create "Create a collator" i
 collator_create(${1:arg1})
 endsnippet
 
-snippet collator_get_attribute "" i
-collator_get_attribute(${1:object}, ${2:arg1})
-endsnippet
-
-snippet collator_get_error_code "" i
-collator_get_error_code(${1:object})
-endsnippet
-
-snippet collator_get_error_message "" i
-collator_get_error_message(${1:object})
-endsnippet
-
-snippet collator_get_locale "" i
-collator_get_locale(${1:object}, ${2:arg1})
-endsnippet
-
-snippet collator_get_sort_key "" i
-collator_get_sort_key(${1:object}, ${2:arg1})
-endsnippet
-
-snippet collator_get_strength "" i
-collator_get_strength(${1:object})
-endsnippet
-
-snippet collator_set_attribute "" i
-collator_set_attribute(${1:object}, ${2:arg1}, ${3:arg2})
-endsnippet
-
-snippet collator_set_strength "" i
-collator_set_strength(${1:object}, ${2:arg1})
-endsnippet
-
 snippet collator_sort "Sort array using specified collator" i
 collator_sort(${1:object}, ${2:&(array) arr}${3:, ${4:sort_flags}})
-endsnippet
-
-snippet collator_sort_with_sort_keys "" i
-collator_sort_with_sort_keys(${1:coll}, ${2:&(array) arr})
 endsnippet
 
 snippet compact "Create array containing variables and their values" i
@@ -880,86 +844,6 @@ endsnippet
 
 snippet date_timezone_set "Alias of DateTime::setTimezone()" i
 date_timezone_set(${1:object}, ${2:timezone})
-endsnippet
-
-snippet datefmt_create "" i
-datefmt_create(${1:locale}, ${2:date_type}, ${3:time_type}${4:, ${5:timezone_str}${6:, ${7:calendar}${8:, ${9:pattern}}}})
-endsnippet
-
-snippet datefmt_format "" i
-datefmt_format(${1:args}${2:, ${3:array}})
-endsnippet
-
-snippet datefmt_format_object "" i
-datefmt_format_object(${1:object}${2:, ${3:format}${4:, ${5:locale}}})
-endsnippet
-
-snippet datefmt_get_calendar "" i
-datefmt_get_calendar(${1:mf})
-endsnippet
-
-snippet datefmt_get_calendar_object "" i
-datefmt_get_calendar_object(${1:mf})
-endsnippet
-
-snippet datefmt_get_datetype "" i
-datefmt_get_datetype(${1:mf})
-endsnippet
-
-snippet datefmt_get_error_code "" i
-datefmt_get_error_code(${1:nf})
-endsnippet
-
-snippet datefmt_get_error_message "" i
-datefmt_get_error_message(${1:coll})
-endsnippet
-
-snippet datefmt_get_locale "" i
-datefmt_get_locale(${1:mf})
-endsnippet
-
-snippet datefmt_get_pattern "" i
-datefmt_get_pattern(${1:mf})
-endsnippet
-
-snippet datefmt_get_timetype "" i
-datefmt_get_timetype(${1:mf})
-endsnippet
-
-snippet datefmt_get_timezone "" i
-datefmt_get_timezone(${1:mf})
-endsnippet
-
-snippet datefmt_get_timezone_id "" i
-datefmt_get_timezone_id(${1:mf})
-endsnippet
-
-snippet datefmt_is_lenient "" i
-datefmt_is_lenient(${1:mf})
-endsnippet
-
-snippet datefmt_localtime "" i
-datefmt_localtime(${1:formatter}, ${2:string}${3:, ${4:&position}})
-endsnippet
-
-snippet datefmt_parse "" i
-datefmt_parse(${1:formatter}, ${2:string}${3:, ${4:&position}})
-endsnippet
-
-snippet datefmt_set_calendar "" i
-datefmt_set_calendar(${1:mf}, ${2:calendar})
-endsnippet
-
-snippet datefmt_set_lenient "" i
-datefmt_set_lenient(${1:mf})
-endsnippet
-
-snippet datefmt_set_pattern "" i
-datefmt_set_pattern(${1:mf}, ${2:pattern})
-endsnippet
-
-snippet datefmt_set_timezone "" i
-datefmt_set_timezone(${1:mf}, ${2:timezone})
 endsnippet
 
 snippet dcgettext "Overrides the domain for a single lookup" i
@@ -2546,290 +2430,6 @@ snippet intl_is_failure "Check whether the given error code indicates failure" i
 intl_is_failure(${1:arg1})
 endsnippet
 
-snippet intlcal_add "" i
-intlcal_add(${1:calendar}, ${2:field}, ${3:amount})
-endsnippet
-
-snippet intlcal_after "" i
-intlcal_after(${1:calendar}, ${2:otherCalendar})
-endsnippet
-
-snippet intlcal_before "" i
-intlcal_before(${1:calendar}, ${2:otherCalendar})
-endsnippet
-
-snippet intlcal_clear "" i
-intlcal_clear(${1:calendar}${2:, ${3:field}})
-endsnippet
-
-snippet intlcal_create_instance "" i
-intlcal_create_instance(${1:timeZone}${2:, ${3:locale}})
-endsnippet
-
-snippet intlcal_equals "" i
-intlcal_equals(${1:calendar}, ${2:otherCalendar})
-endsnippet
-
-snippet intlcal_field_difference "" i
-intlcal_field_difference(${1:calendar}, ${2:when}, ${3:field})
-endsnippet
-
-snippet intlcal_from_date_time "" i
-intlcal_from_date_time(${1:dateTime})
-endsnippet
-
-snippet intlcal_get "" i
-intlcal_get(${1:calendar}, ${2:field})
-endsnippet
-
-snippet intlcal_get_actual_maximum "" i
-intlcal_get_actual_maximum(${1:calendar}, ${2:field})
-endsnippet
-
-snippet intlcal_get_actual_minimum "" i
-intlcal_get_actual_minimum(${1:calendar}, ${2:field})
-endsnippet
-
-snippet intlcal_get_available_locales "" i
-intlcal_get_available_locales()
-endsnippet
-
-snippet intlcal_get_day_of_week_type "" i
-intlcal_get_day_of_week_type(${1:calendar}, ${2:dayOfWeek})
-endsnippet
-
-snippet intlcal_get_error_code "" i
-intlcal_get_error_code(${1:calendar})
-endsnippet
-
-snippet intlcal_get_error_message "" i
-intlcal_get_error_message(${1:calendar})
-endsnippet
-
-snippet intlcal_get_first_day_of_week "" i
-intlcal_get_first_day_of_week(${1:calendar})
-endsnippet
-
-snippet intlcal_get_greatest_minimum "" i
-intlcal_get_greatest_minimum(${1:calendar}, ${2:field})
-endsnippet
-
-snippet intlcal_get_keyword_values_for_locale "" i
-intlcal_get_keyword_values_for_locale(${1:key}, ${2:locale}, ${3:commonlyUsed})
-endsnippet
-
-snippet intlcal_get_least_maximum "" i
-intlcal_get_least_maximum(${1:calendar}, ${2:field})
-endsnippet
-
-snippet intlcal_get_locale "" i
-intlcal_get_locale(${1:calendar}, ${2:localeType})
-endsnippet
-
-snippet intlcal_get_maximum "" i
-intlcal_get_maximum(${1:calendar}, ${2:field})
-endsnippet
-
-snippet intlcal_get_minimal_days_in_first_week "" i
-intlcal_get_minimal_days_in_first_week(${1:calendar})
-endsnippet
-
-snippet intlcal_get_minimum "" i
-intlcal_get_minimum(${1:calendar}, ${2:field})
-endsnippet
-
-snippet intlcal_get_now "" i
-intlcal_get_now()
-endsnippet
-
-snippet intlcal_get_repeated_wall_time_option "" i
-intlcal_get_repeated_wall_time_option(${1:calendar})
-endsnippet
-
-snippet intlcal_get_skipped_wall_time_option "" i
-intlcal_get_skipped_wall_time_option(${1:calendar})
-endsnippet
-
-snippet intlcal_get_time "" i
-intlcal_get_time(${1:calendar})
-endsnippet
-
-snippet intlcal_get_time_zone "" i
-intlcal_get_time_zone(${1:calendar})
-endsnippet
-
-snippet intlcal_get_type "" i
-intlcal_get_type(${1:calendar})
-endsnippet
-
-snippet intlcal_get_weekend_transition "" i
-intlcal_get_weekend_transition(${1:calendar}, ${2:dayOfWeek})
-endsnippet
-
-snippet intlcal_in_daylight_time "" i
-intlcal_in_daylight_time(${1:calendar})
-endsnippet
-
-snippet intlcal_is_equivalent_to "" i
-intlcal_is_equivalent_to(${1:calendar}, ${2:otherCalendar})
-endsnippet
-
-snippet intlcal_is_lenient "" i
-intlcal_is_lenient(${1:calendar})
-endsnippet
-
-snippet intlcal_is_set "" i
-intlcal_is_set(${1:calendar}, ${2:field})
-endsnippet
-
-snippet intlcal_is_weekend "" i
-intlcal_is_weekend(${1:calendar}${2:, ${3:date}})
-endsnippet
-
-snippet intlcal_roll "" i
-intlcal_roll(${1:calendar}, ${2:field}${3:, ${4:amountOrUpOrDown}})
-endsnippet
-
-snippet intlcal_set "" i
-intlcal_set(${1:calendar}, ${2:fieldOrYear}, ${3:valueOrMonth}${4:, ${5:dayOfMonth}${6:, ${7:hour}${8:, ${9:minute}${10:, ${11:second}}}}})
-endsnippet
-
-snippet intlcal_set_first_day_of_week "" i
-intlcal_set_first_day_of_week(${1:calendar}, ${2:dayOfWeek})
-endsnippet
-
-snippet intlcal_set_lenient "" i
-intlcal_set_lenient(${1:calendar}, ${2:isLenient})
-endsnippet
-
-snippet intlcal_set_minimal_days_in_first_week "" i
-intlcal_set_minimal_days_in_first_week(${1:calendar}, ${2:numberOfDays})
-endsnippet
-
-snippet intlcal_set_repeated_wall_time_option "" i
-intlcal_set_repeated_wall_time_option(${1:calendar}, ${2:wallTimeOption})
-endsnippet
-
-snippet intlcal_set_skipped_wall_time_option "" i
-intlcal_set_skipped_wall_time_option(${1:calendar}, ${2:wallTimeOption})
-endsnippet
-
-snippet intlcal_set_time "" i
-intlcal_set_time(${1:calendar}, ${2:date})
-endsnippet
-
-snippet intlcal_set_time_zone "" i
-intlcal_set_time_zone(${1:calendar}, ${2:timeZone})
-endsnippet
-
-snippet intlcal_to_date_time "" i
-intlcal_to_date_time(${1:calendar})
-endsnippet
-
-snippet intlgregcal_create_instance "" i
-intlgregcal_create_instance(${1:timeZoneOrYear}${2:, ${3:localeOrMonth}${4:, ${5:dayOfMonth}${6:, ${7:hour}${8:, ${9:minute}${10:, ${11:second}}}}}})
-endsnippet
-
-snippet intlgregcal_get_gregorian_change "" i
-intlgregcal_get_gregorian_change(${1:calendar})
-endsnippet
-
-snippet intlgregcal_is_leap_year "" i
-intlgregcal_is_leap_year(${1:calendar}, ${2:year})
-endsnippet
-
-snippet intlgregcal_set_gregorian_change "" i
-intlgregcal_set_gregorian_change(${1:calendar}, ${2:date})
-endsnippet
-
-snippet intltz_count_equivalent_ids "" i
-intltz_count_equivalent_ids(${1:zoneId})
-endsnippet
-
-snippet intltz_create_default "" i
-intltz_create_default()
-endsnippet
-
-snippet intltz_create_enumeration "" i
-intltz_create_enumeration(${1:countryOrRawOffset})
-endsnippet
-
-snippet intltz_create_time_zone "" i
-intltz_create_time_zone(${1:zoneId})
-endsnippet
-
-snippet intltz_create_time_zone_id_enumeration "" i
-intltz_create_time_zone_id_enumeration(${1:zoneType}${2:, ${3:region}${4:, ${5:rawOffset}}})
-endsnippet
-
-snippet intltz_from_date_time_zone "" i
-intltz_from_date_time_zone(${1:dateTimeZone})
-endsnippet
-
-snippet intltz_get_canonical_id "" i
-intltz_get_canonical_id(${1:zoneId}${2:, ${3:&isSystemID}})
-endsnippet
-
-snippet intltz_get_display_name "" i
-intltz_get_display_name(${1:timeZone}${2:, ${3:isDaylight}${4:, ${5:style}${6:, ${7:locale}}}})
-endsnippet
-
-snippet intltz_get_dst_savings "" i
-intltz_get_dst_savings(${1:timeZone})
-endsnippet
-
-snippet intltz_get_equivalent_id "" i
-intltz_get_equivalent_id(${1:zoneId}, ${2:index})
-endsnippet
-
-snippet intltz_get_error_code "" i
-intltz_get_error_code(${1:timeZone})
-endsnippet
-
-snippet intltz_get_error_message "" i
-intltz_get_error_message(${1:timeZone})
-endsnippet
-
-snippet intltz_get_gmt "" i
-intltz_get_gmt()
-endsnippet
-
-snippet intltz_get_id "" i
-intltz_get_id(${1:timeZone})
-endsnippet
-
-snippet intltz_get_offset "" i
-intltz_get_offset(${1:timeZone}, ${2:date}, ${3:local}, ${4:&rawOffset}, ${5:&dstOffset})
-endsnippet
-
-snippet intltz_get_raw_offset "" i
-intltz_get_raw_offset(${1:timeZone})
-endsnippet
-
-snippet intltz_get_region "" i
-intltz_get_region(${1:zoneId})
-endsnippet
-
-snippet intltz_get_tz_data_version "" i
-intltz_get_tz_data_version()
-endsnippet
-
-snippet intltz_get_unknown "" i
-intltz_get_unknown()
-endsnippet
-
-snippet intltz_has_same_rules "" i
-intltz_has_same_rules(${1:timeZone}${2:, ${3:otherTimeZone}})
-endsnippet
-
-snippet intltz_to_date_time_zone "" i
-intltz_to_date_time_zone(${1:timeZone})
-endsnippet
-
-snippet intltz_use_daylight_time "" i
-intltz_use_daylight_time(${1:timeZone})
-endsnippet
-
 snippet intval "Get the integer value of a variable" i
 intval(${1:var}${2:, ${3:base}})
 endsnippet
@@ -3110,76 +2710,12 @@ snippet linkinfo "Gets information about a link" i
 linkinfo(${1:filename})
 endsnippet
 
-snippet locale_accept_from_http "" i
-locale_accept_from_http(${1:arg1})
-endsnippet
-
 snippet locale_canonicalize "Canonicalize the locale string" i
 locale_canonicalize(${1:arg1})
 endsnippet
 
-snippet locale_compose "" i
-locale_compose(${1:arg1})
-endsnippet
-
-snippet locale_filter_matches "" i
-locale_filter_matches(${1:langtag}, ${2:locale}${3:, ${4:canonicalize}})
-endsnippet
-
-snippet locale_get_all_variants "" i
-locale_get_all_variants(${1:arg1})
-endsnippet
-
-snippet locale_get_default "" i
-locale_get_default()
-endsnippet
-
-snippet locale_get_display_language "" i
-locale_get_display_language(${1:locale}${2:, ${3:in_locale}})
-endsnippet
-
-snippet locale_get_display_name "" i
-locale_get_display_name(${1:locale}${2:, ${3:in_locale}})
-endsnippet
-
-snippet locale_get_display_region "" i
-locale_get_display_region(${1:locale}${2:, ${3:in_locale}})
-endsnippet
-
-snippet locale_get_display_script "" i
-locale_get_display_script(${1:locale}${2:, ${3:in_locale}})
-endsnippet
-
-snippet locale_get_display_variant "" i
-locale_get_display_variant(${1:locale}${2:, ${3:in_locale}})
-endsnippet
-
-snippet locale_get_keywords "" i
-locale_get_keywords(${1:arg1})
-endsnippet
-
-snippet locale_get_primary_language "" i
-locale_get_primary_language(${1:arg1})
-endsnippet
-
-snippet locale_get_region "" i
-locale_get_region(${1:arg1})
-endsnippet
-
-snippet locale_get_script "" i
-locale_get_script(${1:arg1})
-endsnippet
-
 snippet locale_lookup "Searches the language tag list for the best match to the language" i
 locale_lookup(${1:langtag}, ${2:locale}${3:, ${4:canonicalize}${5:, ${6:def}}})
-endsnippet
-
-snippet locale_parse "" i
-locale_parse(${1:arg1})
-endsnippet
-
-snippet locale_set_default "" i
-locale_set_default(${1:arg1})
 endsnippet
 
 snippet localeconv "Get numeric formatting information" i
@@ -3554,46 +3090,6 @@ snippet msg_stat_queue "Returns information from the message queue data structur
 msg_stat_queue(${1:queue})
 endsnippet
 
-snippet msgfmt_create "" i
-msgfmt_create(${1:locale}, ${2:pattern})
-endsnippet
-
-snippet msgfmt_format "" i
-msgfmt_format(${1:nf}, ${2:args})
-endsnippet
-
-snippet msgfmt_format_message "" i
-msgfmt_format_message(${1:locale}, ${2:pattern}, ${3:args})
-endsnippet
-
-snippet msgfmt_get_error_code "" i
-msgfmt_get_error_code(${1:nf})
-endsnippet
-
-snippet msgfmt_get_error_message "" i
-msgfmt_get_error_message(${1:coll})
-endsnippet
-
-snippet msgfmt_get_locale "" i
-msgfmt_get_locale(${1:mf})
-endsnippet
-
-snippet msgfmt_get_pattern "" i
-msgfmt_get_pattern(${1:mf})
-endsnippet
-
-snippet msgfmt_parse "" i
-msgfmt_parse(${1:nf}, ${2:source})
-endsnippet
-
-snippet msgfmt_parse_message "" i
-msgfmt_parse_message(${1:locale}, ${2:pattern}, ${3:source})
-endsnippet
-
-snippet msgfmt_set_pattern "" i
-msgfmt_set_pattern(${1:mf}, ${2:pattern})
-endsnippet
-
 snippet mt_getrandmax "Show largest possible random value" i
 mt_getrandmax()
 endsnippet
@@ -3606,24 +3102,8 @@ snippet mt_srand "Seeds the Mersenne Twister Random Number Generator" i
 mt_srand(${1:seed}${2:, ${3:mode}})
 endsnippet
 
-snippet mysqli_affected_rows "" i
-mysqli_affected_rows(${1:link})
-endsnippet
-
 snippet mysqli_autocommit "Turns on or off auto-committing database modifications" i
 mysqli_autocommit(${1:link}, ${2:mode})
-endsnippet
-
-snippet mysqli_begin_transaction "" i
-mysqli_begin_transaction(${1:link}${2:, ${3:flags}${4:, ${5:name}}})
-endsnippet
-
-snippet mysqli_change_user "" i
-mysqli_change_user(${1:link}, ${2:user}, ${3:password}, ${4:database})
-endsnippet
-
-snippet mysqli_character_set_name "" i
-mysqli_character_set_name(${1:link})
 endsnippet
 
 snippet mysqli_close "Closes a previously opened database connection" i
@@ -3638,24 +3118,8 @@ snippet mysqli_connect "Alias of mysqli::__construct()" i
 mysqli_connect(${1:host}${2:, ${3:user}${4:, ${5:password}${6:, ${7:database}${8:, ${9:port}${10:, ${11:socket}}}}}})
 endsnippet
 
-snippet mysqli_connect_errno "" i
-mysqli_connect_errno()
-endsnippet
-
-snippet mysqli_connect_error "" i
-mysqli_connect_error()
-endsnippet
-
-snippet mysqli_data_seek "" i
-mysqli_data_seek(${1:result}, ${2:offset})
-endsnippet
-
 snippet mysqli_debug "Performs debugging operations" i
 mysqli_debug(${1:debug_options})
-endsnippet
-
-snippet mysqli_dump_debug_info "" i
-mysqli_dump_debug_info(${1:link})
 endsnippet
 
 snippet mysqli_errno "Returns the error code for the most recent function call" i
@@ -3666,10 +3130,6 @@ snippet mysqli_error "Returns a string description of the last error" i
 mysqli_error(${1:link})
 endsnippet
 
-snippet mysqli_error_list "" i
-mysqli_error_list(${1:link})
-endsnippet
-
 snippet mysqli_escape_string "Alias of mysqli_real_escape_string()" i
 mysqli_escape_string(${1:link}, ${2:query}${3:, ${4:resultmode}})
 endsnippet
@@ -3678,100 +3138,12 @@ snippet mysqli_execute "Alias for mysqli_stmt_execute()" i
 mysqli_execute(${1:stmt})
 endsnippet
 
-snippet mysqli_fetch_all "" i
-mysqli_fetch_all(${1:result}${2:, ${3:result_type}})
-endsnippet
-
-snippet mysqli_fetch_array "" i
-mysqli_fetch_array(${1:result}${2:, ${3:result_type}})
-endsnippet
-
-snippet mysqli_fetch_assoc "" i
-mysqli_fetch_assoc(${1:result})
-endsnippet
-
-snippet mysqli_fetch_field "" i
-mysqli_fetch_field(${1:result})
-endsnippet
-
-snippet mysqli_fetch_field_direct "" i
-mysqli_fetch_field_direct(${1:result}, ${2:field_nr})
-endsnippet
-
-snippet mysqli_fetch_fields "" i
-mysqli_fetch_fields(${1:result})
-endsnippet
-
-snippet mysqli_fetch_lengths "" i
-mysqli_fetch_lengths(${1:result})
-endsnippet
-
-snippet mysqli_fetch_object "" i
-mysqli_fetch_object(${1:result}${2:, ${3:class_name}${4:, ${5:(array) params}}})
-endsnippet
-
-snippet mysqli_fetch_row "" i
-mysqli_fetch_row(${1:result})
-endsnippet
-
-snippet mysqli_field_count "" i
-mysqli_field_count(${1:link})
-endsnippet
-
-snippet mysqli_field_seek "" i
-mysqli_field_seek(${1:result}, ${2:field_nr})
-endsnippet
-
-snippet mysqli_field_tell "" i
-mysqli_field_tell(${1:result})
-endsnippet
-
-snippet mysqli_free_result "" i
-mysqli_free_result(${1:result})
-endsnippet
-
-snippet mysqli_get_charset "" i
-mysqli_get_charset(${1:link})
-endsnippet
-
-snippet mysqli_get_client_info "" i
-mysqli_get_client_info()
-endsnippet
-
 snippet mysqli_get_client_stats "Returns client per-process statistics" i
 mysqli_get_client_stats()
 endsnippet
 
-snippet mysqli_get_client_version "" i
-mysqli_get_client_version(${1:link})
-endsnippet
-
-snippet mysqli_get_connection_stats "" i
-mysqli_get_connection_stats(${1:link})
-endsnippet
-
-snippet mysqli_get_host_info "" i
-mysqli_get_host_info(${1:link})
-endsnippet
-
 snippet mysqli_get_links_stats "Return information about open and cached links" i
 mysqli_get_links_stats()
-endsnippet
-
-snippet mysqli_get_proto_info "" i
-mysqli_get_proto_info(${1:link})
-endsnippet
-
-snippet mysqli_get_server_info "" i
-mysqli_get_server_info(${1:link})
-endsnippet
-
-snippet mysqli_get_server_version "" i
-mysqli_get_server_version(${1:link})
-endsnippet
-
-snippet mysqli_get_warnings "" i
-mysqli_get_warnings(${1:link})
 endsnippet
 
 snippet mysqli_info "Retrieves information about the most recently executed query" i
@@ -3782,32 +3154,8 @@ snippet mysqli_init "Initializes MySQLi and returns a resource for use with mysq
 mysqli_init()
 endsnippet
 
-snippet mysqli_insert_id "" i
-mysqli_insert_id(${1:link})
-endsnippet
-
 snippet mysqli_kill "Asks the server to kill a MySQL thread" i
 mysqli_kill(${1:link}, ${2:connection_id})
-endsnippet
-
-snippet mysqli_more_results "" i
-mysqli_more_results(${1:link})
-endsnippet
-
-snippet mysqli_multi_query "" i
-mysqli_multi_query(${1:link}${2:, ${3:query}})
-endsnippet
-
-snippet mysqli_next_result "" i
-mysqli_next_result(${1:link})
-endsnippet
-
-snippet mysqli_num_fields "" i
-mysqli_num_fields(${1:result})
-endsnippet
-
-snippet mysqli_num_rows "" i
-mysqli_num_rows(${1:result})
 endsnippet
 
 snippet mysqli_options "Set options" i
@@ -3830,28 +3178,8 @@ snippet mysqli_query "Performs a query on the database" i
 mysqli_query(${1:link}, ${2:query}${3:, ${4:resultmode}})
 endsnippet
 
-snippet mysqli_real_connect "" i
-mysqli_real_connect(${1:link}${2:, ${3:host}${4:, ${5:user}${6:, ${7:password}${8:, ${9:database}${10:, ${11:port}${12:, ${13:socket}${14:, ${15:flags}}}}}}}})
-endsnippet
-
-snippet mysqli_real_escape_string "" i
-mysqli_real_escape_string(${1:link}, ${2:string_to_escape})
-endsnippet
-
-snippet mysqli_real_query "" i
-mysqli_real_query(${1:link}${2:, ${3:query}})
-endsnippet
-
-snippet mysqli_reap_async_query "" i
-mysqli_reap_async_query(${1:link})
-endsnippet
-
 snippet mysqli_refresh "Refreshes" i
 mysqli_refresh(${1:link}, ${2:options})
-endsnippet
-
-snippet mysqli_release_savepoint "" i
-mysqli_release_savepoint(${1:link}, ${2:name})
 endsnippet
 
 snippet mysqli_report "Alias of mysqli_driver->report_mode" i
@@ -3866,14 +3194,6 @@ snippet mysqli_savepoint "Set a named transaction savepoint" i
 mysqli_savepoint(${1:link}, ${2:name})
 endsnippet
 
-snippet mysqli_select_db "" i
-mysqli_select_db(${1:link}, ${2:database})
-endsnippet
-
-snippet mysqli_set_charset "" i
-mysqli_set_charset(${1:link}, ${2:charset})
-endsnippet
-
 snippet mysqli_set_opt "Alias of mysqli_options()" i
 mysqli_set_opt()
 endsnippet
@@ -3882,40 +3202,12 @@ snippet mysqli_sqlstate "Returns the SQLSTATE error from previous MySQL operatio
 mysqli_sqlstate(${1:link})
 endsnippet
 
-snippet mysqli_ssl_set "" i
-mysqli_ssl_set(${1:link}, ${2:key}, ${3:cert}, ${4:certificate_authority}, ${5:certificate_authority_path}, ${6:cipher})
-endsnippet
-
 snippet mysqli_stat "Gets the current system status" i
 mysqli_stat(${1:link})
 endsnippet
 
-snippet mysqli_stmt_affected_rows "" i
-mysqli_stmt_affected_rows(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_attr_get "" i
-mysqli_stmt_attr_get(${1:stmt}, ${2:attribute})
-endsnippet
-
-snippet mysqli_stmt_attr_set "" i
-mysqli_stmt_attr_set(${1:stmt}, ${2:attribute}, ${3:value})
-endsnippet
-
-snippet mysqli_stmt_bind_param "" i
-mysqli_stmt_bind_param(${1:stmt}, ${2:types}, ${3:&vars})
-endsnippet
-
-snippet mysqli_stmt_bind_result "" i
-mysqli_stmt_bind_result(${1:stmt}, ${2:&vars})
-endsnippet
-
 snippet mysqli_stmt_close "Closes a prepared statement" i
 mysqli_stmt_close(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_data_seek "" i
-mysqli_stmt_data_seek(${1:stmt}, ${2:offset})
 endsnippet
 
 snippet mysqli_stmt_errno "Returns the error code for the most recent statement call" i
@@ -3926,56 +3218,12 @@ snippet mysqli_stmt_error "Returns a string description for last statement error
 mysqli_stmt_error(${1:stmt})
 endsnippet
 
-snippet mysqli_stmt_error_list "" i
-mysqli_stmt_error_list(${1:stmt})
-endsnippet
-
 snippet mysqli_stmt_execute "Executes a prepared Query" i
 mysqli_stmt_execute(${1:stmt})
 endsnippet
 
 snippet mysqli_stmt_fetch "Fetch results from a prepared statement into the bound variables" i
 mysqli_stmt_fetch(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_field_count "" i
-mysqli_stmt_field_count(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_free_result "" i
-mysqli_stmt_free_result(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_get_result "" i
-mysqli_stmt_get_result(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_get_warnings "" i
-mysqli_stmt_get_warnings(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_init "" i
-mysqli_stmt_init(${1:link})
-endsnippet
-
-snippet mysqli_stmt_insert_id "" i
-mysqli_stmt_insert_id(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_more_results "" i
-mysqli_stmt_more_results(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_next_result "" i
-mysqli_stmt_next_result(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_num_rows "" i
-mysqli_stmt_num_rows(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_param_count "" i
-mysqli_stmt_param_count(${1:stmt})
 endsnippet
 
 snippet mysqli_stmt_prepare "Prepare an SQL statement for execution" i
@@ -3986,40 +3234,8 @@ snippet mysqli_stmt_reset "Resets a prepared statement" i
 mysqli_stmt_reset(${1:stmt})
 endsnippet
 
-snippet mysqli_stmt_result_metadata "" i
-mysqli_stmt_result_metadata(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_send_long_data "" i
-mysqli_stmt_send_long_data(${1:stmt}, ${2:param_nr}, ${3:data})
-endsnippet
-
 snippet mysqli_stmt_sqlstate "Returns SQLSTATE error from previous statement operation" i
 mysqli_stmt_sqlstate(${1:stmt})
-endsnippet
-
-snippet mysqli_stmt_store_result "" i
-mysqli_stmt_store_result(${1:stmt})
-endsnippet
-
-snippet mysqli_store_result "" i
-mysqli_store_result(${1:link}${2:, ${3:flags}})
-endsnippet
-
-snippet mysqli_thread_id "" i
-mysqli_thread_id(${1:link})
-endsnippet
-
-snippet mysqli_thread_safe "" i
-mysqli_thread_safe()
-endsnippet
-
-snippet mysqli_use_result "" i
-mysqli_use_result(${1:link})
-endsnippet
-
-snippet mysqli_warning_count "" i
-mysqli_warning_count(${1:link})
 endsnippet
 
 snippet natcasesort "Sort an array using a case insensitive natural order algorithm" i
@@ -4028,10 +3244,6 @@ endsnippet
 
 snippet natsort "Sort an array using a natural order algorithm" i
 natsort(${1:&arg})
-endsnippet
-
-snippet net_get_interfaces "" i
-net_get_interfaces()
 endsnippet
 
 snippet next "Advance the internal pointer of an array" i
@@ -4050,84 +3262,12 @@ snippet nl_langinfo "Query language and locale information" i
 nl_langinfo(${1:item})
 endsnippet
 
-snippet normalizer_get_raw_decomposition "" i
-normalizer_get_raw_decomposition(${1:input})
-endsnippet
-
-snippet normalizer_is_normalized "" i
-normalizer_is_normalized(${1:input}${2:, ${3:form}})
-endsnippet
-
 snippet normalizer_normalize "Normalizes the input provided and returns the normalized string" i
 normalizer_normalize(${1:input}${2:, ${3:form}})
 endsnippet
 
 snippet number_format "Format a number with grouped thousands" i
 number_format(${1:number}${2:, ${3:num_decimal_places}${4:, ${5:dec_separator}${6:, ${7:thousands_separator}}}})
-endsnippet
-
-snippet numfmt_create "" i
-numfmt_create(${1:locale}, ${2:style}${3:, ${4:pattern}})
-endsnippet
-
-snippet numfmt_format "" i
-numfmt_format(${1:nf}, ${2:num}${3:, ${4:type}})
-endsnippet
-
-snippet numfmt_format_currency "" i
-numfmt_format_currency(${1:nf}, ${2:num}, ${3:currency})
-endsnippet
-
-snippet numfmt_get_attribute "" i
-numfmt_get_attribute(${1:nf}, ${2:attr})
-endsnippet
-
-snippet numfmt_get_error_code "" i
-numfmt_get_error_code(${1:nf})
-endsnippet
-
-snippet numfmt_get_error_message "" i
-numfmt_get_error_message(${1:nf})
-endsnippet
-
-snippet numfmt_get_locale "" i
-numfmt_get_locale(${1:nf}${2:, ${3:type}})
-endsnippet
-
-snippet numfmt_get_pattern "" i
-numfmt_get_pattern(${1:nf})
-endsnippet
-
-snippet numfmt_get_symbol "" i
-numfmt_get_symbol(${1:nf}, ${2:attr})
-endsnippet
-
-snippet numfmt_get_text_attribute "" i
-numfmt_get_text_attribute(${1:nf}, ${2:attr})
-endsnippet
-
-snippet numfmt_parse "" i
-numfmt_parse(${1:formatter}, ${2:string}${3:, ${4:type}${5:, ${6:&position}}})
-endsnippet
-
-snippet numfmt_parse_currency "" i
-numfmt_parse_currency(${1:formatter}, ${2:string}, ${3:&currency}${4:, ${5:&position}})
-endsnippet
-
-snippet numfmt_set_attribute "" i
-numfmt_set_attribute(${1:nf}, ${2:attr}, ${3:value})
-endsnippet
-
-snippet numfmt_set_pattern "" i
-numfmt_set_pattern(${1:nf}, ${2:pattern})
-endsnippet
-
-snippet numfmt_set_symbol "" i
-numfmt_set_symbol(${1:nf}, ${2:attr}, ${3:symbol})
-endsnippet
-
-snippet numfmt_set_text_attribute "" i
-numfmt_set_text_attribute(${1:nf}, ${2:attr}, ${3:value})
 endsnippet
 
 snippet ob_clean "Clean (erase) the output buffer" i
@@ -4336,10 +3476,6 @@ endsnippet
 
 snippet openssl_pkcs7_verify "Verifies the signature of an S/MIME signed message" i
 openssl_pkcs7_verify(${1:filename}, ${2:flags}${3:, ${4:signerscerts}${5:, ${6:cainfo}${7:, ${8:extracerts}${9:, ${10:content}${11:, ${12:pk7}}}}}})
-endsnippet
-
-snippet openssl_pkey_derive "" i
-openssl_pkey_derive(${1:peer_pub_key}, ${2:priv_key}${3:, ${4:keylen}})
 endsnippet
 
 snippet openssl_pkey_export "Gets an exportable representation of a key into a string" i
@@ -4582,10 +3718,6 @@ snippet pcntl_wexitstatus "Returns the return code of a terminated child" i
 pcntl_wexitstatus(${1:status})
 endsnippet
 
-snippet pcntl_wifcontinued "" i
-pcntl_wifcontinued(${1:status})
-endsnippet
-
 snippet pcntl_wifexited "Checks if status code represents a normal exit" i
 pcntl_wifexited(${1:status})
 endsnippet
@@ -4604,10 +3736,6 @@ endsnippet
 
 snippet pcntl_wtermsig "Returns the signal which caused the child to terminate" i
 pcntl_wtermsig(${1:status})
-endsnippet
-
-snippet pdo_drivers "" i
-pdo_drivers()
 endsnippet
 
 snippet pfsockopen "Open persistent Internet or Unix domain socket connection" i
@@ -5036,14 +4164,6 @@ endsnippet
 
 snippet resourcebundle_get "Get data from the bundle" i
 resourcebundle_get(${1:bundle}, ${2:index}${3:, ${4:fallback}})
-endsnippet
-
-snippet resourcebundle_get_error_code "" i
-resourcebundle_get_error_code(${1:bundle})
-endsnippet
-
-snippet resourcebundle_get_error_message "" i
-resourcebundle_get_error_message(${1:bundle})
 endsnippet
 
 snippet resourcebundle_locales "Get supported locales" i
@@ -5958,10 +5078,6 @@ snippet tidy_access_count "Returns the Number of Tidy accessibility warnings enc
 tidy_access_count(${1:object})
 endsnippet
 
-snippet tidy_clean_repair "" i
-tidy_clean_repair(${1:object})
-endsnippet
-
 snippet tidy_config_count "Returns the Number of Tidy configuration errors encountered for specified document" i
 tidy_config_count(${1:object})
 endsnippet
@@ -5974,76 +5090,12 @@ snippet tidy_error_count "Returns the Number of Tidy errors encountered for spec
 tidy_error_count(${1:object})
 endsnippet
 
-snippet tidy_get_body "" i
-tidy_get_body(${1:tidy})
-endsnippet
-
-snippet tidy_get_config "" i
-tidy_get_config(${1:object})
-endsnippet
-
-snippet tidy_get_error_buffer "" i
-tidy_get_error_buffer(${1:object})
-endsnippet
-
-snippet tidy_get_head "" i
-tidy_get_head()
-endsnippet
-
-snippet tidy_get_html "" i
-tidy_get_html()
-endsnippet
-
-snippet tidy_get_html_ver "" i
-tidy_get_html_ver(${1:object})
-endsnippet
-
-snippet tidy_get_opt_doc "" i
-tidy_get_opt_doc(${1:resource}, ${2:optname})
-endsnippet
-
 snippet tidy_get_output "Return a string representing the parsed tidy markup" i
 tidy_get_output(${1:object})
 endsnippet
 
-snippet tidy_get_release "" i
-tidy_get_release()
-endsnippet
-
-snippet tidy_get_root "" i
-tidy_get_root()
-endsnippet
-
-snippet tidy_get_status "" i
-tidy_get_status(${1:object})
-endsnippet
-
 snippet tidy_getopt "Returns the value of the specified configuration option for the tidy document" i
 tidy_getopt(${1:option})
-endsnippet
-
-snippet tidy_is_xhtml "" i
-tidy_is_xhtml(${1:object})
-endsnippet
-
-snippet tidy_is_xml "" i
-tidy_is_xml(${1:object})
-endsnippet
-
-snippet tidy_parse_file "" i
-tidy_parse_file(${1:file}${2:, ${3:config_options}${4:, ${5:encoding}${6:, ${7:use_include_path}}}})
-endsnippet
-
-snippet tidy_parse_string "" i
-tidy_parse_string(${1:input}${2:, ${3:config_options}${4:, ${5:encoding}}})
-endsnippet
-
-snippet tidy_repair_file "" i
-tidy_repair_file(${1:filename}${2:, ${3:config_file}${4:, ${5:encoding}${6:, ${7:use_include_path}}}})
-endsnippet
-
-snippet tidy_repair_string "" i
-tidy_repair_string(${1:data}${2:, ${3:config_file}${4:, ${5:encoding}}})
 endsnippet
 
 snippet tidy_warning_count "Returns the Number of Tidy warnings encountered for specified document" i
@@ -6120,26 +5172,6 @@ endsnippet
 
 snippet transliterator_create "Create a transliterator" i
 transliterator_create(${1:id}${2:, ${3:direction}})
-endsnippet
-
-snippet transliterator_create_from_rules "" i
-transliterator_create_from_rules(${1:rules}${2:, ${3:direction}})
-endsnippet
-
-snippet transliterator_create_inverse "" i
-transliterator_create_inverse(${1:orig_trans})
-endsnippet
-
-snippet transliterator_get_error_code "" i
-transliterator_get_error_code(${1:trans})
-endsnippet
-
-snippet transliterator_get_error_message "" i
-transliterator_get_error_message(${1:trans})
-endsnippet
-
-snippet transliterator_list_ids "" i
-transliterator_list_ids()
 endsnippet
 
 snippet transliterator_transliterate "Transliterate a string" i
@@ -6280,186 +5312,6 @@ endsnippet
 
 snippet wordwrap "Wraps a string to a given number of characters" i
 wordwrap(${1:str}${2:, ${3:width}${4:, ${5:break}${6:, ${7:cut}}}})
-endsnippet
-
-snippet xdebug_break "" i
-xdebug_break()
-endsnippet
-
-snippet xdebug_call_class "" i
-xdebug_call_class(${1:depth})
-endsnippet
-
-snippet xdebug_call_file "" i
-xdebug_call_file(${1:depth})
-endsnippet
-
-snippet xdebug_call_function "" i
-xdebug_call_function(${1:depth})
-endsnippet
-
-snippet xdebug_call_line "" i
-xdebug_call_line(${1:depth})
-endsnippet
-
-snippet xdebug_clear_aggr_profiling_data "" i
-xdebug_clear_aggr_profiling_data()
-endsnippet
-
-snippet xdebug_code_coverage_started "" i
-xdebug_code_coverage_started()
-endsnippet
-
-snippet xdebug_debug_zval "" i
-xdebug_debug_zval(${1:var})
-endsnippet
-
-snippet xdebug_debug_zval_stdout "" i
-xdebug_debug_zval_stdout(${1:var})
-endsnippet
-
-snippet xdebug_disable "" i
-xdebug_disable()
-endsnippet
-
-snippet xdebug_dump_aggr_profiling_data "" i
-xdebug_dump_aggr_profiling_data(${1:prefix})
-endsnippet
-
-snippet xdebug_dump_superglobals "" i
-xdebug_dump_superglobals()
-endsnippet
-
-snippet xdebug_enable "" i
-xdebug_enable()
-endsnippet
-
-snippet xdebug_get_code_coverage "" i
-xdebug_get_code_coverage()
-endsnippet
-
-snippet xdebug_get_collected_errors "" i
-xdebug_get_collected_errors(${1:clear})
-endsnippet
-
-snippet xdebug_get_declared_vars "" i
-xdebug_get_declared_vars()
-endsnippet
-
-snippet xdebug_get_formatted_function_stack "" i
-xdebug_get_formatted_function_stack()
-endsnippet
-
-snippet xdebug_get_function_count "" i
-xdebug_get_function_count()
-endsnippet
-
-snippet xdebug_get_function_stack "" i
-xdebug_get_function_stack()
-endsnippet
-
-snippet xdebug_get_gc_run_count "" i
-xdebug_get_gc_run_count()
-endsnippet
-
-snippet xdebug_get_gc_total_collected_roots "" i
-xdebug_get_gc_total_collected_roots()
-endsnippet
-
-snippet xdebug_get_gcstats_filename "" i
-xdebug_get_gcstats_filename()
-endsnippet
-
-snippet xdebug_get_headers "" i
-xdebug_get_headers()
-endsnippet
-
-snippet xdebug_get_monitored_functions "" i
-xdebug_get_monitored_functions(${1:clear})
-endsnippet
-
-snippet xdebug_get_profiler_filename "" i
-xdebug_get_profiler_filename()
-endsnippet
-
-snippet xdebug_get_stack_depth "" i
-xdebug_get_stack_depth()
-endsnippet
-
-snippet xdebug_get_tracefile_name "" i
-xdebug_get_tracefile_name()
-endsnippet
-
-snippet xdebug_is_debugger_active "" i
-xdebug_is_debugger_active()
-endsnippet
-
-snippet xdebug_is_enabled "" i
-xdebug_is_enabled()
-endsnippet
-
-snippet xdebug_memory_usage "" i
-xdebug_memory_usage()
-endsnippet
-
-snippet xdebug_peak_memory_usage "" i
-xdebug_peak_memory_usage()
-endsnippet
-
-snippet xdebug_print_function_stack "" i
-xdebug_print_function_stack(${1:message}${2:, ${3:options}})
-endsnippet
-
-snippet xdebug_set_filter "" i
-xdebug_set_filter(${1:filter_group}, ${2:filter_type}, ${3:array_of_filters})
-endsnippet
-
-snippet xdebug_start_code_coverage "" i
-xdebug_start_code_coverage(${1:options})
-endsnippet
-
-snippet xdebug_start_error_collection "" i
-xdebug_start_error_collection()
-endsnippet
-
-snippet xdebug_start_function_monitor "" i
-xdebug_start_function_monitor(${1:functions_to_monitor})
-endsnippet
-
-snippet xdebug_start_gcstats "" i
-xdebug_start_gcstats(${1:fname})
-endsnippet
-
-snippet xdebug_start_trace "" i
-xdebug_start_trace(${1:fname}${2:, ${3:options}})
-endsnippet
-
-snippet xdebug_stop_code_coverage "" i
-xdebug_stop_code_coverage(${1:cleanup})
-endsnippet
-
-snippet xdebug_stop_error_collection "" i
-xdebug_stop_error_collection()
-endsnippet
-
-snippet xdebug_stop_function_monitor "" i
-xdebug_stop_function_monitor()
-endsnippet
-
-snippet xdebug_stop_gcstats "" i
-xdebug_stop_gcstats()
-endsnippet
-
-snippet xdebug_stop_trace "" i
-xdebug_stop_trace()
-endsnippet
-
-snippet xdebug_time_index "" i
-xdebug_time_index()
-endsnippet
-
-snippet xdebug_var_dump "" i
-xdebug_var_dump(${1:var})
 endsnippet
 
 snippet xml_error_string "Get XML parser error string" i
