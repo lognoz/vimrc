@@ -61,3 +61,7 @@
 [submodule "pack/bundle/opt/local-vimrc"]
 	path = pack/bundle/opt/local-vimrc
 	url = https://github.com/embear/vim-localvimrc
+
+[submodule "pack/bundle/opt/repeat"]
+	path = pack/bundle/opt/repeat
+	url = https://github.com/tpope/vim-repeat
