@@ -1,1 +1,1 @@
-call lognoz#functions#spell()
+call functions#spell()
