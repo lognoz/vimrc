@@ -19,11 +19,11 @@ function! s:get_input_text(matchs)
 	return text . 'Type number and <Enter> (empty cancel): '
 endfunction
 
-function! lognoz#git#set_helpers() abort
-	inoremap <expr> <c-f> lognoz#git#autocomplete()
+function! git#set_helpers() abort
+	inoremap <expr> <c-f> git#autocomplete()
 endfunction
 
-function! lognoz#git#autocomplete()
+function! git#autocomplete()
 	let matchs = s:get_matchs()
 
 	if len(matchs) == 0

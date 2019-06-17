@@ -1,6 +1,7 @@
 " Turn on spell-checking
-function! lognoz#functions#spell() abort
+function! functions#spell() abort
 	if has('syntax')
+		setlocal complete+=kspell
 		setlocal spell
 		setlocal spelllang=en
 
@@ -11,7 +12,7 @@ function! lognoz#functions#spell() abort
 endfunction
 
 " Switch to plaintext mode
-function! lognoz#functions#plaintext() abort
+function! functions#plaintext() abort
 	setlocal wrap
 	setlocal nolist
 
@@ -24,5 +25,5 @@ function! lognoz#functions#plaintext() abort
 	setlocal expandtab
 
 	" Turn on spell-checking
-	call lognoz#functions#spell()
+	call functions#spell()
 endfunction
