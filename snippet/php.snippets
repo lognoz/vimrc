@@ -1,3 +1,10 @@
+global !p
+def fix_indent(snip):
+	vim.eval('feedkeys("\<c-f>")')
+endglobal
+
+pre_expand "fix_indent(snip)"
+
 snippet _ "Lookup a message in the current domain" i
 _(${1:msgid})
 endsnippet
