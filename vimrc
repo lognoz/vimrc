@@ -14,7 +14,6 @@ endif
 
 if &loadplugins
 	if has('packages')
-		packadd! autoclose
 		packadd! easy-align
 		packadd! editorconfig
 		packadd! fugitive
@@ -31,6 +30,7 @@ if &loadplugins
 		packadd! syntastic
 		packadd! ultisnips
 		packadd! undotree
+		packadd! delimitmate
 	else
 		source $HOME/.vim/pack/pathogen/opt/pathogen/autoload/pathogen.vim
 		call pathogen#infect('pack/bundle/opt/{}')
