@@ -4,15 +4,30 @@ function! autocomplete#select()
 	call g:UltiSnips#ExpandSnippet()
 	if g:ulti_expand_res == 0
 		if pumvisible()
-			return "\<c-n>"
+			return "\<C-n>"
 		else
 			call g:UltiSnips#JumpForwards()
 			if g:ulti_jump_forwards_res == 0
-				return "\<tab>"
+				if col(".") == 1 && col("$") == 1
+					call g:autocomplete#indent()
+					call clearmatches()
+					return "\<Right>"
+				else
+					return "\<Tab>"
 			endif
 		endif
 	endif
 	return ''
+endfunction
+
+function! autocomplete#indent()
+	if col(".") == 1
+		execute "normal! i|\<Esc>==\"_x"
+	endif
+
+	if col(".") == 1
+		execute "normal! a\<Tab>"
+	endif
 endfunction
 
 function! autocomplete#setup_mappings()
