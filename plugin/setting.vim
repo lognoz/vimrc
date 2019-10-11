@@ -9,7 +9,6 @@ set showcmd          " Show commands
 set showmode         " Show current mode
 set wildchar=<tab>   " Start wild expansion using <tab>
 set wildmenu         " Define wildmenu
-set cm=blowfish2     " Encryption type
 set noswapfile       " No swap
 
 " Allow local vimrc
