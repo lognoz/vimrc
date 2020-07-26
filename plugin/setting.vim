@@ -22,6 +22,9 @@ set fdm=marker
 " Backspace and delete
 set backspace=indent,eol,start
 
+" Define encoding
+set encoding=utf-8
+
 " Define line number
 set number
 set relativenumber
