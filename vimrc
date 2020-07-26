@@ -18,7 +18,6 @@ if &loadplugins
 		packadd! editorconfig
 		packadd! fugitive
 		packadd! gitgutter
-		packadd! local-vimrc
 		packadd! markup-language
 		packadd! multiple-cursors
 		packadd! nerdtree
@@ -39,7 +38,3 @@ endif
 
 syntax on
 filetype plugin indent on
-
-" Add local vimrc loader
-let g:localvimrc_name = ['.vimrc']
-let g:localvimrc_ask = 0
